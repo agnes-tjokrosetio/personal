@@ -4,4 +4,4 @@ This website was created out my own curiosity to learn more about frontend langu
 
 Enjoy!
 
-Visit the URL: https://agnes-gramser.github.io/personal/
+Visit the URL: https://agnes-tjokrosetio.github.io/personal/

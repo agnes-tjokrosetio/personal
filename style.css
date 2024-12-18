@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(30, 30, 30); /* Dark background */
+    color: rgb(227, 227, 227); /* Light text */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.page-content {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 3vh;
+}
+
+.welcome {
+    font-size: 2em;
+    padding: 0px 10vw;
+    color: rgb(227, 227, 227);
+}
+
+.self {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    border-top: 1px solid rgb(100, 100, 100);
+    border-bottom: 1px solid rgb(100, 100, 100);
+    align-items: center;
+    justify-content: center;
+    margin: 2vh 5vw;
+    padding: 5vh 10vw;
+    color: rgb(227, 227, 227);
+}
+
+.paragraph-text {
+    font-size: 1.2em;
+    color: rgb(200, 200, 200);
+}
+
+.button-text {
+    font-size: 1em;
+    color: rgb(200, 200, 200);
+}
+
+.actionables {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.home-buttons {
+    background-color: rgb(50, 50, 50);
+    border: none;
+    border-radius: 5px;
+    color: rgb(227, 227, 227);
+    padding: 10px 15px;
+    list-style: none;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    display: block;
+}
+
+.buttons {
+    background-color: rgb(50, 50, 50);
+}
+
+.buttons a {
+    text-decoration: none;
+    color: rgb(227, 227, 227);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.contact {
+    text-align: center;
+    background: rgb(30, 30, 30);
+    color: rgb(227, 227, 227);
+}
+
+.contact a {
+    text-align: center;
+    color: rgb(200, 200, 200);
+    text-decoration: none;
+    font-size: 2em;
+}

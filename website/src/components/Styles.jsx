@@ -156,6 +156,23 @@ export const ProjectsSection = styled.div`
   padding: 5vh 5vw;
   background-color: white;
   border-top: 1px solid grey;
+  gap: 20px;
+  align-items: center;
+
+  img {
+    height: 250px;
+    width: auto;
+    object-fit: cover;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    img {
+      height: 150px;
+      width: auto;
+      object-fit: cover;
+    }
+  }
 `;
 
 export const ProjectsSectionText = styled.div`

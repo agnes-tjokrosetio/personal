@@ -1,8 +1,13 @@
+import React from "react";
 import ContactInformation from "../components/ContactInformation";
 import NavigationBar from "../components/NavigationBar";
 import { PageScreen, ProjectsIntro, ProjectsSection, ProjectsSectionText, SourceButton } from "../components/Styles";
 
 function ProjectsPage() {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <NavigationBar />

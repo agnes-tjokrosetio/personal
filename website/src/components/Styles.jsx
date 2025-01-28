@@ -179,4 +179,16 @@ export const ProjectsSectionText = styled.div`
   display: flex;
   flex-direction: column;
   color: black;
+  gap: 20px;
+`;
+
+export const SourceButton = styled.button`
+  background: none;
+  width: 150px;
+  height: 50px;
+  color: black;
+  border: 1px solid black;
+  border-radius: 0;
+  font-size: 0.75rem;
+  padding: 5px 10px;
 `;

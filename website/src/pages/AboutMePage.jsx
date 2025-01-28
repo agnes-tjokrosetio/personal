@@ -1,0 +1,85 @@
+import ContactInformation from "../components/ContactInformation";
+import NavigationBar from "../components/NavigationBar";
+import { MoreButton, PageScreen, PersonalSection, TechnicalSection } from "../components/Styles";
+
+function AboutMePage() {
+  return (
+    <>
+      <NavigationBar />
+      <PageScreen>
+        <PersonalSection>
+          <h1 className="text-[2rem] font-bold text-white">About Me</h1>
+          <p className="text-[1rem] text-white">
+            I'm Agnes and I am currently a 3rd year UNSW student studying a Bachelor of Computer Science / Commerce,
+            majoring in Computer Science and Finance.
+          </p>
+          <p className="text-[1rem] text-white">
+            In terms of the pathways in Computer Science, I have a strong interest in software product development,
+            software engineering and frontend developing and engineering. As for Finance, I also have a strong interest
+            in areas of investment banking, private equity and real estate.
+          </p>
+          <p className="text-[1rem] text-white">
+            I am known for being an enthusiastic learner and with a bubbly and empathetic nature. I am looking for
+            opportunities to creating intuitive and engaging user experiences by using my technical skills and further
+            develop my understanding of design and programming by learning from industry professionals. I am also keen
+            on further developing my knowledge in investing and managing money to grow with businesses on expanding
+            operations and sources of funding.
+          </p>
+          <MoreButton onClick={() => window.open("/AT_Resume.pdf", "_blank", "noopener,noreferrer")}>RESUME</MoreButton>
+        </PersonalSection>
+        <TechnicalSection>
+          <h1 className="text-[1.5rem] font-bold text-black">Experience</h1>
+          <li className="text-[1rem] text-black">Casual Academic @ UNSW (Sep 2024 - Present)</li>
+          <ul className="m-[0]">
+            <li className="text-[1rem] text-black">COMP1521 (Computer Systems Fundamentals) Lab Assistant</li>
+            <li className="text-[1rem] text-black">Exam Invigilator</li>
+          </ul>
+          <li className="text-[1rem] text-black">Student Mentor @ UNSW (May 2024 - Present)</li>
+          <li className="text-[1rem] text-black">Online Tutor / Marker @ Dr Du Education (Feb 2023 - Present)</li>
+          <li className="text-[1rem] text-black">Tutor @ Abacus Coaching Centre (Jan 2020 - Jan 202)</li>
+        </TechnicalSection>
+        <TechnicalSection>
+          <h1 className="text-[1.5rem] font-bold text-black">Skills</h1>
+          <li className="text-[1rem] text-black">JavaScript, React, TypeScript, HTML, CSS</li>
+          <li className="text-[1rem] text-black">C, Java, MIPS, R, SQL/PLpgSQL, Python</li>
+          <li className="text-[1rem] text-black">
+            GitLab/GitHub, Maple, RStudio, Miscrosoft, Google Workspace, PostgreSQL
+          </li>
+        </TechnicalSection>
+        <TechnicalSection>
+          <h1 className="text-[1.5rem] font-bold text-black">Relevant Courses</h1>
+          <p>Computer Science</p>
+          <li className="text-[1rem] text-black">COMP6080 (Web Front-End Programming) - 87 HD</li>
+          <li className="text-[1rem] text-black">MATH1131 (Mathematics 1A) - 95 HD</li>
+          <li className="text-[1rem] text-black">MATH1231 (Mathematics 1B) - 92 HD</li>
+          <li className="text-[1rem] text-black">MATH1081 (Discrete Mathematics) - 86 HD</li>
+          <p>Finance</p>
+          <li className="text-[1rem] text-black">FINS2618 (Capital Markets and Institutions) - 82 DN</li>
+        </TechnicalSection>
+        <TechnicalSection>
+          <h1 className="text-[1.5rem] font-bold text-black">Leadership, Activities and Volunteering</h1>
+          <li className="text-[1rem] text-black">IT Director @ UNSW FinTech Society (Nov 2024 - Present)</li>
+          <li className="text-[1rem] text-black">
+            General Vollie (Volunteer) @ Arc Wellness Warriors (May 2024 - Present)
+          </li>
+          <li className="text-[1rem] text-black">
+            Peer Mentor @ UNSW Computer Science and Engineering Society (Jan 2024 - Apr 2024)
+          </li>
+          <li className="text-[1rem] text-black">
+            Marketing Subcommitee @ UNSW Computer Science and Engineering Society (Mar 2023 - Nov 2023)
+          </li>
+        </TechnicalSection>
+        <TechnicalSection>
+          <h1 className="text-[1.5rem] font-bold text-black">Hobbies / Interests</h1>
+          <li className="text-[1rem] text-black">Composing instrumental music</li>
+          <li className="text-[1rem] text-black">Tennis and gym</li>
+          <li className="text-[1rem] text-black">Travelling</li>
+          <li className="text-[1rem] text-black">Cooking</li>
+        </TechnicalSection>
+        <ContactInformation />
+      </PageScreen>
+    </>
+  );
+}
+
+export default AboutMePage;

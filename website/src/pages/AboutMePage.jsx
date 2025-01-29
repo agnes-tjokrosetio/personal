@@ -59,7 +59,7 @@ function AboutMePage() {
         </TechnicalSection>
         <TechnicalSection>
           <h1 className="text-[1.5rem] font-bold text-black">Relevant Courses</h1>
-          <p className="mb-[0]">Computer Science</p>
+          <p className="m-[0]">Computer Science</p>
           <li className="text-[1rem] text-black">COMP6080 (Web Front-End Programming) - 87 HD</li>
           <li className="text-[1rem] text-black">MATH1131 (Mathematics 1A) - 95 HD</li>
           <li className="text-[1rem] text-black">MATH1231 (Mathematics 1B) - 92 HD</li>
@@ -69,7 +69,7 @@ function AboutMePage() {
         </TechnicalSection>
         <TechnicalSection>
           <h1 className="text-[1.5rem] font-bold text-black">Interested Pathways</h1>
-          <p className="mb-[0]">Computer Science</p>
+          <p className="m-[0]">Computer Science</p>
           <li className="text-[1rem] text-black">Front-End Developing</li>
           <li className="text-[1rem] text-black">Software Engineering</li>
           <li className="text-[1rem] text-black">Software Product Development</li>

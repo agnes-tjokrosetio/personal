@@ -24,7 +24,7 @@ function ProjectsPage() {
           <img src="mbh.jpg" alt="Mending Broken Hearts"></img>
           <ProjectsSectionText>
             <h1 className="m-[0] text-[1.5rem] font-bold text-white">Software Engineer @ UNSW MBH</h1>
-            <p className="m-[0] text-[0.7rem] text-white">Product Timeline: Jan 2025 - Present</p>
+            <p className="m-[0] text-[0.7rem] text-white">Project Timeline: Jan 2025 - Present</p>
             <p className="m-[0] text-[1rem] text-white">
               As a VIP Student, I was able to work as a Software Engineer as part of the Software Team for UNSW Mending
               Broken Hearts. My responsibilities involved refining and designing the patient app accompanying the
@@ -37,12 +37,12 @@ function ProjectsPage() {
         <ProjectsSection>
           <ProjectsSectionText>
             <h1 className="m-[0] text-[1.5rem] font-bold text-white">This wesite!</h1>
-            <p className="m-[0] text-[0.7rem] text-white">Product Timeline: Jan 2024 - Present</p>
+            <p className="m-[0] text-[0.7rem] text-white">Project Timeline: Jan 2024 - Present</p>
             <p className="m-[0] text-[1rem] text-white">
               The ideas for having a personal website started out as a bit of a curious mind in wanting to learn more
               about the frontend programming languages (e.g. HTML, CSS, JavaScript). Overtime, I've continued to work on
-              building this website using those same languages and also applied my knowledge about React which I have
-              gained on taking relevant front-end related couses.
+              building this website using those same languages and also applied my knowledge about React and Vite which
+              I have gained on taking relevant front-end related couses.
             </p>
             <SourceButton
               onClick={() =>

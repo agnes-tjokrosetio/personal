@@ -32,11 +32,7 @@ function AboutMePage() {
           </p>
           <MoreButton
             onClick={() =>
-              window.open(
-                "https://agnes-tjokrosetio.github.io/personal/aboutme/AT_Resume.pdf",
-                "_blank",
-                "noopener,noreferrer"
-              )
+              window.open("https://agnes-tjokrosetio.github.io/personal/AT_Resume.pdf", "_blank", "noopener,noreferrer")
             }
           >
             RESUME

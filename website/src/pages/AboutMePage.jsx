@@ -70,7 +70,7 @@ function AboutMePage() {
         <TechnicalSection>
           <h1 className="text-[1.5rem] font-bold text-black">Interested Pathways</h1>
           <p className="m-[0]">Computer Science</p>
-          <li className="text-[1rem] text-black">Front-End Developing</li>
+          <li className="text-[1rem] text-black">Front-End Developing and/or Engineering</li>
           <li className="text-[1rem] text-black">Software Engineering</li>
           <li className="text-[1rem] text-black">Software Product Development</li>
           <p className="mb-[0]">Finance</p>

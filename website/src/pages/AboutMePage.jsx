@@ -54,7 +54,7 @@ function AboutMePage() {
           <li className="text-[1rem] text-black">JavaScript, React, TypeScript, HTML, CSS</li>
           <li className="text-[1rem] text-black">C, Java, MIPS, R, SQL/PLpgSQL, Python</li>
           <li className="text-[1rem] text-black">
-            GitLab/GitHub, Maple, RStudio, Miscrosoft, Google Workspace, PostgreSQL
+            GitLab/GitHub, Maple, RStudio, Miscrosoft, Google Workspace, PostgreSQL, Framer
           </li>
         </TechnicalSection>
         <TechnicalSection>

@@ -25,7 +25,7 @@ function LandingPage() {
         <AboutSection>
           <h1 className="text-[1.5rem] font-bold text-white">Hi, I'm Agnes!</h1>
           <p className="text-[1rem] text-white">
-            I am 3rd year UNSW student studying a <b>Bachelor of Computer Science / Commerce</b>, majoring in Computer
+            I am a 3rd year UNSW student studying a <b>Bachelor of Computer Science / Commerce</b>, majoring in Computer
             Science and Finance. I have a strong interest in{" "}
             <b>software product development, software engineering and frontend developing and engineering</b>.
           </p>

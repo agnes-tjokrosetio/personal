@@ -26,7 +26,7 @@ function ProjectsPage() {
             <p className="m-[0] text-[0.7rem] text-white">Product Timeline: Jan 2025 - Present</p>
             <p className="m-[0] text-[1rem] text-white">
               As a VIP Student, I was able to work as a Software Engineer as part of the Software Team for UNSW Mending
-              Borken Hearts. My responsibilities involved refining and designing the patient app accompanying the
+              Broken Hearts. My responsibilities involved refining and designing the patient app accompanying the
               artificial heart and building the website and desktop app for clinician access. I was also collaborating
               with other teams (mainly the Systems team) in working to integrate sensors and Bluetooth into the app
               backend.

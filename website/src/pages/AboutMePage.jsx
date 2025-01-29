@@ -43,7 +43,7 @@ function AboutMePage() {
           </ul>
           <li className="text-[1rem] text-black">Student Mentor @ UNSW (May 2024 - Present)</li>
           <li className="text-[1rem] text-black">Online Tutor / Marker @ Dr Du Education (Feb 2023 - Present)</li>
-          <li className="text-[1rem] text-black">Tutor @ Abacus Coaching Centre (Jan 2020 - Jan 202)</li>
+          <li className="text-[1rem] text-black">Tutor @ Abacus Coaching Centre (Jan 2020 - Jan 2022)</li>
         </TechnicalSection>
         <TechnicalSection>
           <h1 className="text-[1.5rem] font-bold text-black">Skills</h1>

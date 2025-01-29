@@ -80,7 +80,9 @@ function AboutMePage() {
         </TechnicalSection>
         <TechnicalSection>
           <h1 className="text-[1.5rem] font-bold text-black">Leadership, Activities and Volunteering</h1>
-          <li className="text-[1rem] text-black">IT Director @ UNSW FinTech Society (Nov 2024 - Present)</li>
+          <li className="text-[1rem] text-black">
+            IT Director @ UNSW Financial Technology Society (Nov 2024 - Present)
+          </li>
           <li className="text-[1rem] text-black">
             General Vollie (Volunteer) @ Arc Wellness Warriors (May 2024 - Present)
           </li>

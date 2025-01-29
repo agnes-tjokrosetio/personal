@@ -24,7 +24,7 @@ function ProjectsPage() {
           <img src="mbh.jpg" alt="Mending Broken Hearts"></img>
           <ProjectsSectionText>
             <h1 className="m-[0] text-[1.5rem] font-bold text-white">Software Engineer @ UNSW MBH</h1>
-            <p className="m-[0] text-[0.7rem] text-white">Project Timeline: Jan 2025 - Present</p>
+            <p className="m-[0] text-[0.7rem] text-white">Project Timeline: Feb 2025 - Present</p>
             <p className="m-[0] text-[1rem] text-white">
               As a VIP Student, I was able to work as a Software Engineer as part of the Software Team for UNSW Mending
               Broken Hearts. My responsibilities involved refining and designing the patient app accompanying the

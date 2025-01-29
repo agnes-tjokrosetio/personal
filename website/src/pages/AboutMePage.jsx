@@ -59,13 +59,24 @@ function AboutMePage() {
         </TechnicalSection>
         <TechnicalSection>
           <h1 className="text-[1.5rem] font-bold text-black">Relevant Courses</h1>
-          <p>Computer Science</p>
+          <p className="m-[0]">Computer Science</p>
           <li className="text-[1rem] text-black">COMP6080 (Web Front-End Programming) - 87 HD</li>
           <li className="text-[1rem] text-black">MATH1131 (Mathematics 1A) - 95 HD</li>
           <li className="text-[1rem] text-black">MATH1231 (Mathematics 1B) - 92 HD</li>
           <li className="text-[1rem] text-black">MATH1081 (Discrete Mathematics) - 86 HD</li>
-          <p>Finance</p>
+          <p className="m-[0]">Finance</p>
           <li className="text-[1rem] text-black">FINS2618 (Capital Markets and Institutions) - 82 DN</li>
+        </TechnicalSection>
+        <TechnicalSection>
+          <h1 className="text-[1.5rem] font-bold text-black">Interested Pathways</h1>
+          <p className="m-[0]">Computer Science</p>
+          <li className="text-[1rem] text-black">Front-End Developing</li>
+          <li className="text-[1rem] text-black">Software Engineering</li>
+          <li className="text-[1rem] text-black">Software Product Development</li>
+          <p className="m-[0]">Finance</p>
+          <li className="text-[1rem] text-black">Investment Banking</li>
+          <li className="text-[1rem] text-black">Private Equity</li>
+          <li className="text-[1rem] text-black">Real Estate Finance</li>
         </TechnicalSection>
         <TechnicalSection>
           <h1 className="text-[1.5rem] font-bold text-black">Leadership, Activities and Volunteering</h1>

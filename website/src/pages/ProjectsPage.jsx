@@ -15,8 +15,9 @@ function ProjectsPage() {
         <ProjectsIntro>
           <h1 className="text-[2rem] font-bold text-white">Projects</h1>
           <p className="text-[1rem] text-white">
-            This page is a collection of the projects I have and am completing. GitHub links are provided for the source
-            code where possible - (works completed through UNSW are not be provided).
+            This page is a collection of the projects I have and am completing. Links are provided for the source code
+            where possible (works completed through UNSW are not provided due to plagiarism and intellectual property
+            concerns).
           </p>
         </ProjectsIntro>
         <ProjectsSection>

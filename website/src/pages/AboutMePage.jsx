@@ -30,7 +30,7 @@ function AboutMePage() {
             on further developing my knowledge in investing and managing money to grow with businesses on expanding
             operations and sources of funding.
           </p>
-          <MoreButton onClick={() => window.open("/personal/AT_Resume.pdf", "_blank", "noopener,noreferrer")}>
+          <MoreButton onClick={() => window.open("/personal/aboutme/AT_Resume.pdf", "_blank", "noopener,noreferrer")}>
             RESUME
           </MoreButton>
         </PersonalSection>

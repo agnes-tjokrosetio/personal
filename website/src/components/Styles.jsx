@@ -143,6 +143,11 @@ export const TechnicalSection = styled.div`
   border-top: 1px solid grey;
 `;
 
+export const TechnicalSectionList = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
 export const ProjectsIntro = styled.div`
   display: flex;
   flex-direction: column;

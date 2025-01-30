@@ -152,7 +152,12 @@ export const ProjectsIntro = styled.div`
   display: flex;
   flex-direction: column;
   color: white;
-  padding: 5vh 5vw;
+  padding: 5vh 5vw 8vh 5vw;
+
+  @media (max-width: 768px) {
+    text-align: center;
+    padding: 5vh 15vw 8vh 15vw;
+  }
 `;
 
 export const ProjectsSection = styled.div`

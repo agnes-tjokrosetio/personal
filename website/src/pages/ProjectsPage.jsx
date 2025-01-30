@@ -36,13 +36,14 @@ function ProjectsPage() {
         </ProjectsSection>
         <ProjectsSection>
           <ProjectsSectionText>
-            <h1 className="m-[0] text-[1.5rem] font-bold text-white">This wesite!</h1>
+            <h1 className="m-[0] text-[1.5rem] font-bold text-white">This website!</h1>
             <p className="m-[0] text-[0.7rem] text-white">Project Timeline: Jan 2024 - Present</p>
             <p className="m-[0] text-[1rem] text-white">
               The ideas for having a personal website started out as a bit of a curious mind in wanting to learn more
               about the frontend programming languages (e.g. HTML, CSS, JavaScript). Overtime, I've continued to work on
-              building this website using those same languages and also applied my knowledge about React and Vite which
-              I have gained on taking relevant front-end related couses.
+              building this website using those same languages and also applied my knowledge about React and Vite
+              (setting up the website as a React project using Vite) which I have gained on taking relevant front-end
+              related couses. This website was published in January 2025.
             </p>
             <SourceButton
               onClick={() =>

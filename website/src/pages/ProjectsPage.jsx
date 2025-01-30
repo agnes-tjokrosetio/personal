@@ -16,8 +16,8 @@ function ProjectsPage() {
           <h1 className="text-[2rem] font-bold text-white">Projects</h1>
           <p className="text-[1rem] text-white">
             This page is a collection of the projects I have and am completing. Links are provided for the source code
-            where possible (works completed through UNSW are not provided due to plagiarism and intellectual property
-            concerns).
+            where possible (works completed through UNSW courses are not provided due to plagiarism and intellectual
+            property concerns thus demo recordings of applications made may be provided).
           </p>
         </ProjectsIntro>
         <ProjectsSection>

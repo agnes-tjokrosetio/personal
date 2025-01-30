@@ -156,7 +156,7 @@ export const ProjectsIntro = styled.div`
 
   @media (max-width: 768px) {
     text-align: center;
-    padding: 5vh 15vw 8vh 15vw;
+    padding: 5vh 10vw 8vh 10vw;
   }
 `;
 

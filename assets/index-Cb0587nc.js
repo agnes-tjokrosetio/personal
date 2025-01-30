@@ -173,7 +173,12 @@ Please change the parent <Route path="${A}"> to <Route path="${A==="/"?"*":`${A}
   display: flex;
   flex-direction: column;
   color: white;
-  padding: 5vh 5vw;
+  padding: 5vh 5vw 8vh 5vw;
+
+  @media (max-width: 768px) {
+    text-align: center;
+    padding: 5vh 15vw 8vh 15vw;
+  }
 `,Gf=Oe.div`
   display: flex;
   flex-direction: row;

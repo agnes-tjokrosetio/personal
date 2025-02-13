@@ -51,10 +51,11 @@ function AboutMePage() {
         </TechnicalSection>
         <TechnicalSection>
           <h1 className="text-[1.5rem] font-bold text-black">Skills</h1>
-          <li className="text-[1rem] text-black">JavaScript, React, TypeScript, HTML, CSS</li>
-          <li className="text-[1rem] text-black">C, Java, MIPS, R, SQL/PLpgSQL, Python</li>
+          <li className="text-[1rem] text-black">TypeScript, JavaScript, HTML, CSS, React</li>
+          <li className="text-[1rem] text-black">C, MIPS Assembly, Java, R, SQL/PLpgSQL, Python</li>
           <li className="text-[1rem] text-black">
-            GitLab/GitHub, Maple, RStudio, Miscrosoft, Google Workspace, PostgreSQL, Framer
+            Microsoft Office & Teams, Google Workspace, PostgreSQL, SQLite, psycopg2, GitLab/GitHub, Maple, VSCode,
+            RStudio, Framer
           </li>
         </TechnicalSection>
         <TechnicalSection>

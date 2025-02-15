@@ -78,7 +78,7 @@ Please change the parent <Route path="${A}"> to <Route path="${A==="/"?"*":`${A}
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: right;
+  text-align: center;
   background-image: url("welcome-img.jpg");
   background-position: left center;
   background-repeat: no-repeat;
@@ -86,7 +86,6 @@ Please change the parent <Route path="${A}"> to <Route path="${A==="/"?"*":`${A}
 
   @media (max-width: 768px) {
     height: 50vh;
-    text-align: center;
     padding: 0vh 7vw;
   }
 `,Zu=Oe.hr`

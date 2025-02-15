@@ -13,6 +13,10 @@ import {
 import ContactInformation from "../components/ContactInformation";
 
 function LandingPage() {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const navigate = useNavigate();
   return (
     <>

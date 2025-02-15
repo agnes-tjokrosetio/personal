@@ -133,6 +133,10 @@ Please change the parent <Route path="${A}"> to <Route path="${A==="/"?"*":`${A}
   display: flex;
   flex-direction: row;
   justify-content: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `,Yf=Oe.div`
   text-align: center;
   padding: 10vh 5vw;
@@ -142,6 +146,10 @@ Please change the parent <Route path="${A}"> to <Route path="${A==="/"?"*":`${A}
   background-repeat: no-repeat;
   background-size: cover;
   transition: 0.3s ease-in-out;
+
+  @media (max-width: 768px) {
+    width: auto;
+  }
 
   &:hover {
     opacity: 0.7;

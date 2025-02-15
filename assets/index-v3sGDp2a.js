@@ -78,7 +78,7 @@ Please change the parent <Route path="${A}"> to <Route path="${A==="/"?"*":`${A}
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: right;
+  text-align: left;
   color: #f5f5f5;
   background-image: url("welcome-img.jpg");
   background-position: left center;

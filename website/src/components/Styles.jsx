@@ -36,7 +36,7 @@ export const WelcomeSection = styled.div`
   flex-direction: column;
   justify-content: center;
   text-align: right;
-  color: gray;
+  color: #f5f5f5;
   background-image: url("welcome-img.jpg");
   background-position: left center;
   background-repeat: no-repeat;

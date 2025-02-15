@@ -111,7 +111,7 @@ export const ViewType = styled.div`
   transition: 0.3s ease-in-out;
 
   &:hover {
-    opacity: 0.5;
+    opacity: 0.7;
   }
 `;
 

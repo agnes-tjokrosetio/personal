@@ -144,7 +144,7 @@ Please change the parent <Route path="${A}"> to <Route path="${A==="/"?"*":`${A}
   transition: 0.3s ease-in-out;
 
   &:hover {
-    opacity: 0.5;
+    opacity: 0.7;
   }
 `,vy=Oe.div`
   height: auto;

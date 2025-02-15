@@ -98,6 +98,10 @@ export const ViewSection = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const ViewType = styled.div`
@@ -109,6 +113,10 @@ export const ViewType = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   transition: 0.3s ease-in-out;
+
+  @media (max-width: 768px) {
+    width: auto;
+  }
 
   &:hover {
     opacity: 0.7;

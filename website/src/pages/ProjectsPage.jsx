@@ -35,6 +35,7 @@ function ProjectsPage() {
           </ProjectsSectionText>
         </ProjectsSection>
         <ProjectsSection>
+          <img src="web-building.jpg" alt="Building Personal Website"></img>
           <ProjectsSectionText>
             <h1 className="m-[0] text-[1.5rem] font-bold text-white">This website!</h1>
             <p className="m-[0] text-[0.7rem] text-white">Project Timeline: Jan 2024 - Present</p>
@@ -54,7 +55,6 @@ function ProjectsPage() {
               View Source Code
             </SourceButton>
           </ProjectsSectionText>
-          <img src="web-building.jpg" alt="Building Personal Website"></img>
         </ProjectsSection>
         <ContactInformation />
       </PageScreen>

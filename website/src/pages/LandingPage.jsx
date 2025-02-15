@@ -35,11 +35,11 @@ function LandingPage() {
           <MoreButton onClick={() => navigate("/aboutme")}>See More</MoreButton>
         </AboutSection>
         <ViewSection>
-          <ViewType bgimage="/about-me.jpg" onClick={() => navigate("/aboutme")}>
+          <ViewType bgimage="about-me.jpg" onClick={() => navigate("/aboutme")}>
             <p className="text-[1.5rem] text-white">About Me</p>
             <Divider />
           </ViewType>
-          <ViewType bgimage="/projects.jpg" onClick={() => navigate("/projects")}>
+          <ViewType bgimage="projects.jpg" onClick={() => navigate("/projects")}>
             <p className="text-[1.5rem] text-white">Projects</p>
             <Divider />
           </ViewType>

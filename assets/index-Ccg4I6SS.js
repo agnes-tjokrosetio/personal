@@ -141,6 +141,11 @@ Please change the parent <Route path="${A}"> to <Route path="${A==="/"?"*":`${A}
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 0.8;
+  }
 `,vy=Oe.div`
   height: auto;
   padding: 5vh 5vw;

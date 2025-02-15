@@ -19,7 +19,7 @@ function LandingPage() {
       <NavigationBar />
       <PageScreen>
         <WelcomeSection>
-          <h1 className="text-[2rem] font-bold text-white">Welcome to my personal portfolio!</h1>
+          <h1 className="text-[2rem] font-bold">Welcome to my personal portfolio!</h1>
           <Divider />
         </WelcomeSection>
         <AboutSection>
@@ -36,11 +36,11 @@ function LandingPage() {
         </AboutSection>
         <ViewSection>
           <ViewType bgimage="about-me.jpg" onClick={() => navigate("/aboutme")}>
-            <p className="text-[1.5rem] text-white">About Me</p>
+            <p className="text-[1.5rem]">About Me</p>
             <Divider />
           </ViewType>
           <ViewType bgimage="projects.jpg" onClick={() => navigate("/projects")}>
-            <p className="text-[1.5rem] text-white">Projects</p>
+            <p className="text-[1.5rem]">Projects</p>
             <Divider />
           </ViewType>
         </ViewSection>

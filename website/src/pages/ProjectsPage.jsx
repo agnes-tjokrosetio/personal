@@ -21,12 +21,12 @@ function ProjectsPage() {
           </p>
         </ProjectsIntro>
         <ProjectsSection>
-          <h1 className="m-[0] text-[1.5rem] font-bold text-black">Software Engineer @ UNSW MBH</h1>
+          <h1 className="m-[0] text-[1.5rem] font-bold text-black">UNSW Mending Broken Hearts</h1>
           <p className="m-[0] text-[0.7rem] text-black">Project Timeline: Feb 2025 - Present</p>
           <p className="m-[0] text-[1rem] text-black">
             UNSW Mending Broken Hearts is a student led project involving a hands on experience where we design and
-            build a total artificial heart prototype in collaboration with academic researchers. As a VIP Student, I was
-            able to work as a Software Engineer as part of the Software Team for UNSW Mending Broken Hearts. My
+            build a total artificial heart prototype (owned by UNSW) in collaboration with academic researchers. As a
+            VIP Student, I was able to work as a <i>Software Engineer</i> as part of the Software Team. My main
             responsibilities involved designing and refining the patient app accompanying the total artificial heart and
             building the website and desktop app for clinician access. I was also collaborating with other teams (mainly
             the Systems team) in working to integrate sensors and Bluetooth into the app backend.

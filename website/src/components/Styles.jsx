@@ -177,34 +177,18 @@ export const ProjectsIntro = styled.div`
 
 export const ProjectsSection = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding: 5vh 5vw;
   background-color: white;
   border-top: 1px solid grey;
   gap: 20px;
-  align-items: center;
-
-  img {
-    height: 250px;
-    width: auto;
-    object-fit: cover;
-  }
+  align-items: left;
+  color: black;
 
   @media (max-width: 768px) {
     flex-direction: column;
-    img {
-      height: 150px;
-      width: auto;
-      object-fit: cover;
-    }
+    align-items: center;
   }
-`;
-
-export const ProjectsSectionText = styled.div`
-  display: flex;
-  flex-direction: column;
-  color: black;
-  gap: 20px;
 `;
 
 export const SourceButton = styled.button`

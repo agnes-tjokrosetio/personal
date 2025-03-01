@@ -1,3 +1,3 @@
-# Hi
+# More Details
 
-Another README.md that says welcome to the source code of my personal website.
+This project is a React app with Tailwind CSS and Vite. It utilises JavaScript, CSS and HTML.

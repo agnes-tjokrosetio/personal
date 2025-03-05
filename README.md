@@ -6,6 +6,6 @@ Hope you enjoy!
 
 ### Website: https://agnes-tjokrosetio.github.io/personal
 
-# More Details
+## More Details
 
 This project is a React app with Tailwind CSS and Vite. It utilises JavaScript, CSS and HTML.

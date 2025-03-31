@@ -6,12 +6,16 @@ import {
   PageScreen,
   WelcomeSection,
   Divider,
-  AboutSection,
-  MoreButton,
   ViewSection,
   ViewType,
+  ContactIcon,
+  WelcomeButtons,
 } from "../components/Styles";
+
 import ContactInformation from "../components/ContactInformation";
+import profilePhoto from "../assets/profile-photo.jpg";
+import aboutMeImg from "../assets/about-me.jpg";
+import projectsImg from "../assets/projects.jpg";
 
 function LandingPage() {
   React.useEffect(() => {
@@ -24,27 +28,58 @@ function LandingPage() {
       <NavigationBar />
       <PageScreen>
         <WelcomeSection>
-          <h1 className="text-[2rem] font-bold">Welcome to my personal portfolio!</h1>
-          <Divider />
+          <div className="bg-[#1a1a1a] m-8 w-[65%] h-auto p-4 gap-4 flex flex-col justify-center items-center rounded-[10px]">
+            <img src={profilePhoto} alt="Profile" className="h-[100%] w-auto rounded-[10px] object-cover" />
+            <div className="flex flex-row gap-6">
+              <ContactIcon
+                href="https://www.linkedin.com/in/agnestjokrosetio/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fa fa-linkedin !text-2xl" aria-hidden="true"></i>
+              </ContactIcon>
+              <ContactIcon href="https://github.com/agnes-tjokrosetio" target="_blank" rel="noopener noreferrer">
+                <i className="fa fa-github !text-2xl" aria-hidden="true"></i>
+              </ContactIcon>
+              <ContactIcon href="mailto:agnes.tjokrosetio@gmail.com" target="_blank" rel="noopener noreferrer">
+                <i className="fa fa-envelope !text-2xl" aria-hidden="true"></i>
+              </ContactIcon>
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-4 max-w-[800px] px-16 py-4">
+            <p className="text-[2rem] font-extrabold text-[white]">Hi, I'm Agnes</p>
+            <p className="text-[1.5rem] text-gray-300 font-medium">Commerce / Computer Science Student</p>
+            <p className="text-[1rem] text-[#f0f0f0] max-w-[600px]">
+              I am a 3rd year UNSW student studying a <b>Bachelor of Computer Science / Commerce</b>, majoring in
+              Computer Science and Finance.
+            </p>
+            <p className="text-[1rem] text-white">
+              This website has been created to to showcase my portfolio, including my projects and my activities!
+            </p>
+            <WelcomeButtons>
+              <button
+                className="bg-[#1a1a1a] text-white hover:text-gray-500 px-6 py-2 font-semibold"
+                onClick={() => navigate("/aboutme")}
+              >
+                About Me
+              </button>
+              <button
+                className="bg-[#1a1a1a] text-white hover:text-gray-500 px-6 py-2 font-semibold"
+                onClick={() => navigate("/projects")}
+              >
+                View My Projects
+              </button>
+            </WelcomeButtons>
+          </div>
         </WelcomeSection>
-        <AboutSection>
-          <h1 className="text-[1.5rem] font-bold text-white">Hi, I'm Agnes!</h1>
-          <p className="text-[1rem] text-white">
-            I am a 3rd year UNSW student studying a <b>Bachelor of Computer Science / Commerce</b>, majoring in Computer
-            Science and Finance. My career aspirations lie mainly in Computer Science and I have a strong interest in{" "}
-            <b>software product development, software engineering and frontend developing and engineering</b>.
-          </p>
-          <p className="text-[1rem] text-white">
-            This website has been created to to showcase my portfolio, including my projects and my activities!
-          </p>
-          <MoreButton onClick={() => navigate("/aboutme")}>See More</MoreButton>
-        </AboutSection>
+
         <ViewSection>
-          <ViewType bgimage="about-me.jpg" onClick={() => navigate("/aboutme")}>
+          <ViewType bgimage={aboutMeImg} onClick={() => navigate("/aboutme")}>
             <p className="text-[1.5rem] font-[600]">About Me</p>
             <Divider />
           </ViewType>
-          <ViewType bgimage="projects.jpg" onClick={() => navigate("/projects")}>
+          <ViewType bgimage={projectsImg} onClick={() => navigate("/projects")}>
             <p className="text-[1.5rem] font-[600]">Projects</p>
             <Divider />
           </ViewType>

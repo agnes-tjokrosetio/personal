@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const NavBar = styled.div`
   width: 100vw;
   height: 40px;
+  padding: 10px;
   background: black;
   display: flex;
   align-items: center;
@@ -26,27 +27,37 @@ export const PageScreen = styled.div`
   flex-direction: column;
   margin-top: 40px;
   background-color: #242424;
+  overflow-x: hidden;
+  overflow-y: auto;
 `;
 
 export const WelcomeSection = styled.div`
-  height: 75vh;
-  min-height: 50vh;
-  padding: 0vh 5vw;
+  min-height: 75vh;
+  height: auto;
+  padding: 3vh 5vw;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
   text-align: left;
   color: #f5f5f5;
-  background-image: url("welcome-img.jpg");
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-size: cover;
 
   @media (max-width: 768px) {
-    height: 50vh;
-    color: white;
+    flex-direction: column;
+    height: auto;
     text-align: center;
-    padding: 0vh 7vw;
+    padding: 3vh 3vw;
+  }
+`;
+
+export const WelcomeButtons = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+
+  @media (max-width: 768px) {
+    justify-content: center;
   }
 `;
 
@@ -68,10 +79,9 @@ export const AboutSection = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: left;
+  text-align: center;
 
   @media (max-width: 768px) {
-    text-align: center;
     padding: 10vh 15vw;
   }
 `;
@@ -95,16 +105,21 @@ export const MoreButton = styled.button`
 `;
 
 export const ViewSection = styled.div`
+  height: 40vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
-
   @media (max-width: 768px) {
     flex-direction: column;
+    margin: 5vh 0;
   }
 `;
 
 export const ViewType = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   padding: 10vh 5vw;
   width: 50vw;
@@ -135,18 +150,6 @@ export const ContactSection = styled.div`
 
 export const ContactIcon = styled.a`
   color: white;
-`;
-
-export const PersonalSection = styled.div`
-  display: flex;
-  flex-direction: column;
-  color: white;
-  padding: 5vh 5vw 8vh 5vw;
-
-  @media (max-width: 768px) {
-    text-align: center;
-    padding: 5vh 10vw 8vh 10vw;
-  }
 `;
 
 export const TechnicalSection = styled.div`

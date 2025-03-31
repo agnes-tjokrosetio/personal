@@ -1,19 +1,29 @@
 import React from "react";
 import ContactInformation from "../components/ContactInformation";
 import NavigationBar from "../components/NavigationBar";
-import { MoreButton, PageScreen, PersonalSection, TechnicalSection } from "../components/Styles";
+import { PageScreen } from "../components/Styles";
+import {
+  interestAreas,
+  relevantCourses,
+  relevantSkills,
+  volunteeringActivities,
+  workExperience,
+} from "../components/info";
 
 function AboutMePage() {
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+  const csCourses = relevantCourses.filter((course) => course.degree === "Computer Science");
+  const finsCourses = relevantCourses.filter((course) => course.degree === "Finance");
+
   return (
     <>
       <NavigationBar />
       <PageScreen>
-        <PersonalSection>
-          <h1 className="text-[2rem] font-bold text-white">About Me</h1>
+        <div className="flex flex-col text-white gap-4 py-[8vh] px-[10vw] md:px-[5vw] text-center md:text-left">
+          <p className="text-[2rem] font-bold text-white">About Me</p>
           <p className="text-[1rem] text-white">
             I'm Agnes and I am currently a 3rd year UNSW student studying a Bachelor of Computer Science / Commerce,
             majoring in Computer Science and Finance.
@@ -30,77 +40,200 @@ function AboutMePage() {
             on further developing my knowledge in investing and managing money to grow with businesses on expanding
             operations and sources of funding.
           </p>
-          <MoreButton
-            onClick={() =>
-              window.open("https://agnes-tjokrosetio.github.io/personal/AT_Resume.pdf", "_blank", "noopener,noreferrer")
-            }
-          >
-            RESUME
-          </MoreButton>
-        </PersonalSection>
-        <TechnicalSection>
-          <h1 className="text-[1.5rem] font-bold text-black">Experience</h1>
-          <li className="text-[1rem] text-black">Casual Academic @ UNSW (Sep 2024 - Present)</li>
-          <ul className="m-[0]">
-            <li className="text-[1rem] text-black">COMP1521 (Computer Systems Fundamentals) Lab Assistant</li>
-            <li className="text-[1rem] text-black">Exam Invigilator</li>
-          </ul>
-          <li className="text-[1rem] text-black">Student Mentor @ UNSW (May 2024 - Present)</li>
-          <li className="text-[1rem] text-black">Mathematics Tutor / Marker @ Dr Du Education (Feb 2023 - Present)</li>
-          <li className="text-[1rem] text-black">Tutor @ Abacus Coaching Centre (Jan 2020 - Jan 2022)</li>
-        </TechnicalSection>
-        <TechnicalSection>
-          <h1 className="text-[1.5rem] font-bold text-black">Skills</h1>
-          <li className="text-[1rem] text-black">TypeScript, JavaScript, HTML, CSS, React</li>
-          <li className="text-[1rem] text-black">C, MIPS Assembly, Java, R, SQL/PLpgSQL, Python</li>
-          <li className="text-[1rem] text-black">
-            Microsoft Office & Teams, Google Workspace, PostgreSQL, SQLite, psycopg2, GitLab/GitHub, Maple, VSCode,
-            RStudio, Framer
-          </li>
-        </TechnicalSection>
-        <TechnicalSection>
-          <h1 className="text-[1.5rem] font-bold text-black">Relevant Courses</h1>
-          <p className="m-[0]">Computer Science</p>
-          <li className="text-[1rem] text-black">COMP6080 (Web Front-End Programming) - 87 HD</li>
-          <li className="text-[1rem] text-black">MATH1131 (Mathematics 1A) - 95 HD</li>
-          <li className="text-[1rem] text-black">MATH1231 (Mathematics 1B) - 92 HD</li>
-          <li className="text-[1rem] text-black">MATH1081 (Discrete Mathematics) - 86 HD</li>
-          <p className="mb-[0]">Finance</p>
-          <li className="text-[1rem] text-black">FINS2618 (Capital Markets and Institutions) - 82 DN</li>
-        </TechnicalSection>
-        <TechnicalSection>
-          <h1 className="text-[1.5rem] font-bold text-black">Interested Pathways</h1>
-          <p className="m-[0]">Computer Science</p>
-          <li className="text-[1rem] text-black">Front-End Developing and/or Engineering</li>
-          <li className="text-[1rem] text-black">Software Engineering</li>
-          <li className="text-[1rem] text-black">Software Product Development</li>
-          <p className="mb-[0]">Finance</p>
-          <li className="text-[1rem] text-black">Investment Banking</li>
-          <li className="text-[1rem] text-black">Private Equity</li>
-          <li className="text-[1rem] text-black">Real Estate Finance</li>
-        </TechnicalSection>
-        <TechnicalSection>
-          <h1 className="text-[1.5rem] font-bold text-black">Leadership, Activities and Volunteering</h1>
-          <li className="text-[1rem] text-black">
-            IT Director @ UNSW Financial Technology Society (Nov 2024 - Present)
-          </li>
-          <li className="text-[1rem] text-black">
-            General Vollie (Volunteer) @ Arc Wellness Warriors (May 2024 - Present)
-          </li>
-          <li className="text-[1rem] text-black">
-            Peer Mentor @ UNSW Computer Science and Engineering Society (Jan 2024 - Apr 2024)
-          </li>
-          <li className="text-[1rem] text-black">
-            Marketing Subcommitee @ UNSW Computer Science and Engineering Society (Mar 2023 - Nov 2023)
-          </li>
-        </TechnicalSection>
-        <TechnicalSection>
-          <h1 className="text-[1.5rem] font-bold text-black">Hobbies / Interests</h1>
-          <li className="text-[1rem] text-black">Composing instrumental music</li>
-          <li className="text-[1rem] text-black">Tennis and gym</li>
-          <li className="text-[1rem] text-black">Travelling</li>
-          <li className="text-[1rem] text-black">Cooking</li>
-        </TechnicalSection>
+          <div className="flex justify-center md:justify-start w-full pt-2">
+            <button
+              className="w-auto max-w-max bg-[#1a1a1a] text-white hover:text-gray-500 px-6 py-2 font-semibold"
+              onClick={() =>
+                window.open(
+                  "https://agnes-tjokrosetio.github.io/personal/AT_Resume.pdf",
+                  "_blank",
+                  "noopener,noreferrer"
+                )
+              }
+            >
+              RESUME
+            </button>
+          </div>
+        </div>
+
+        <div className="flex flex-col text-black bg-[#f8f8f8] gap-8 px-[5vw] py-[10vh] border-t border-gray-400">
+          <p className="text-[1.5rem] font-bold text-black">Experience</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {workExperience.map((item, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 p-6 flex flex-col gap-2"
+              >
+                <div className="flex items-center gap-4">
+                  <div className="bg-gray-100 rounded-full w-12 h-12 flex items-center justify-center">
+                    <i className="fa fa-briefcase text-gray-500 text-lg" />
+                  </div>
+                  <div>
+                    <h3 className="text-md font-bold text-gray-900">{item.title}</h3>
+                    <p className="text-sm text-gray-500">{item.company}</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-gray-500 mt-2">
+                  <i className="fa fa-calendar" aria-hidden="true"></i>
+                  <span>{item.date}</span>
+                </div>
+                {item.details && (
+                  <ul className="list-disc list-inside text-sm text-gray-700 mt-2 ml-2">
+                    {item.details.map((detail, i) => (
+                      <li key={i}>{detail}</li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="flex flex-col text-black bg-[#f8f8f8] gap-8 px-[5vw] py-[10vh] border-t border-gray-400">
+          <p className="text-[1.5rem] font-bold text-black">Relevant Skills</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {relevantSkills.map((skill, index) => {
+              const visibleSkills = skill.details.slice(0, 4);
+              const remainingCount = skill.details.length - visibleSkills.length;
+              return (
+                <div
+                  key={index}
+                  className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 p-6 flex flex-col gap-4"
+                >
+                  <h3 className="text-lg font-bold text-gray-900">{skill.type}</h3>
+
+                  <div className="flex flex-wrap gap-2">
+                    {visibleSkills.map((item, i) => (
+                      <span key={i} className="bg-gray-100 text-gray-700 text-sm px-3 py-1 rounded-full">
+                        {item}
+                      </span>
+                    ))}
+                    {remainingCount > 0 && (
+                      <span className="bg-[#242424] text-[white] text-sm px-3 py-1 rounded-full cursor-pointer hover:bg-blue-200">
+                        +{remainingCount} more
+                      </span>
+                    )}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        <div className="flex flex-col text-black bg-[#f8f8f8] gap-8 px-[5vw] py-[10vh] border-t border-gray-400">
+          <p className="text-[1.5rem] font-bold text-black">Relevant Courses</p>
+          <div>
+            <h2 className="text-[1.25rem] font-semibold mb-4">Computer Science</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {csCourses.map((course, index) => (
+                <div
+                  key={index}
+                  className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 p-6 flex flex-col gap-2"
+                >
+                  <div className="flex items-center gap-3">
+                    <div className="bg-gray-100 text-gray-600 rounded-full p-2">
+                      <i className="fa fa-code text-lg" />
+                    </div>
+                    <h3 className="text-md font-bold text-gray-900">Computer Science</h3>
+                  </div>
+                  <p className="text-sm text-gray-700 mt-2">{course.course}</p>
+                  <span className="bg-green-100 text-green-700 text-xs font-semibold w-fit px-3 py-1 rounded-full mt-2">
+                    {course.mark}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div>
+            <h2 className="text-[1.25rem] font-semibold mb-4">Finance</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {finsCourses.map((course, index) => (
+                <div
+                  key={index}
+                  className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 p-6 flex flex-col gap-2"
+                >
+                  <div className="flex items-center gap-3">
+                    <div className="bg-gray-100 text-gray-600 rounded-full p-2">
+                      <i className="fa fa-line-chart text-lg" />
+                    </div>
+                    <h3 className="text-md font-bold text-gray-900">Finance</h3>
+                  </div>
+                  <p className="text-sm text-gray-700 mt-2">{course.course}</p>
+                  <span className="bg-green-100 text-green-700 text-xs font-semibold w-fit px-3 py-1 rounded-full mt-2">
+                    {course.mark}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-col text-black bg-[#f8f8f8] px-[5vw] py-[5vh] border-t border-gray-400">
+          <p className="text-[1.5rem] font-bold text-black mb-6">Interested Pathways</p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Computer Science Pathways */}
+            <div className="bg-[white] rounded-2xl shadow-md p-6 flex flex-col gap-2">
+              <h2 className="text-[1.2rem] font-semibold text-gray-800 mb-2">Computer Science</h2>
+              <ul className="list-disc list-inside text-[1rem] text-black space-y-1">
+                <li>Front-End Developing and/or Engineering</li>
+                <li>Software Engineering</li>
+                <li>Software Product Development</li>
+              </ul>
+            </div>
+
+            {/* Finance Pathways */}
+            <div className="bg-[white] rounded-2xl shadow-md p-6 flex flex-col gap-2">
+              <h2 className="text-[1.2rem] font-semibold text-gray-800 mb-2">Finance</h2>
+              <ul className="list-disc list-inside text-[1rem] text-black space-y-1">
+                <li>Investment Banking</li>
+                <li>Private Equity</li>
+                <li>Real Estate Finance</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-col text-black bg-[#f8f8f8] gap-8 px-[5vw] py-[10vh] border-t border-gray-400">
+          <p className="text-[1.5rem] font-bold text-black">Leadership, Activities and Volunteering</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {volunteeringActivities.map((item, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 p-6 flex flex-col gap-2"
+              >
+                <div className="flex items-center gap-4">
+                  <div className="bg-gray-100 rounded-full w-12 h-12 flex items-center justify-center">
+                    <i className="fa fa-users text-gray-500 text-lg" />
+                  </div>
+                  <div>
+                    <h3 className="text-md font-bold text-gray-900">{item.title}</h3>
+                    <p className="text-sm text-gray-500">{item.society}</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-gray-500 mt-2">
+                  <i className="fa fa-calendar" aria-hidden="true"></i>
+                  <span>{item.date}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="flex flex-col text-black gap-8 bg-[#f8f8f8] px-[5vw] py-[5vh] border-t border-gray-400">
+          <p className="text-[1.5rem] font-bold text-black">Hobbies / Interests</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {interestAreas.map((item, index) => (
+              <div key={index} className="bg-white rounded-2xl shadow-md p-6 flex flex-row items-center gap-4">
+                <div className="bg-gray-100 rounded-full w-12 h-12 flex items-center justify-center">
+                  <i className={`fa ${item.icon} text-gray-500 text-lg`} />
+                </div>
+                <p className="text-[1rem] text-black">{item.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
         <ContactInformation />
       </PageScreen>
     </>

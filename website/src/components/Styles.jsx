@@ -114,43 +114,6 @@ export const ViewSection = styled.div`
   }
 `;
 
-// export const ViewType = styled.div`
-//   position: relative;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   text-align: center;
-//   padding: 10vh 5vw;
-//   width: 50vw;
-//   overflow: hidden;
-//   color: white;
-
-//   @media (max-width: 768px) {
-//     width: auto;
-//   }
-
-//   &::before {
-//     content: "";
-//     position: absolute;
-//     inset: 0;
-//     background-image: ${({ bgimage }) => `url(${bgimage})`};
-//     background-position: left;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     transition: opacity 0.3s ease-in-out;
-//     z-index: 0;
-//   }
-
-//   &:hover::before {
-//     opacity: 0.7;
-//   }
-
-//   > * {
-//     position: relative;
-//     z-index: 1;
-//   }
-// `;
 export const ViewType = styled.div`
   position: relative;
   width: 50vw;

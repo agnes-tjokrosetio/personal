@@ -1,55 +1,53 @@
 import React from "react";
 import ContactInformation from "../components/ContactInformation";
 import NavigationBar from "../components/NavigationBar";
-import { PageScreen, ProjectsIntro, ProjectsSection, SourceButton } from "../components/Styles";
+import { PageScreen } from "../components/Styles";
+import { projects } from "../components/info";
 
 function ProjectsPage() {
-  React.useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  React.useEffect(() => window.scrollTo(0, 0), []);
 
   return (
     <>
       <NavigationBar />
       <PageScreen>
-        <ProjectsIntro>
-          <h1 className="text-[2rem] font-bold text-white">Projects</h1>
+        <div className="flex flex-col text-white gap-4 py-[8vh] px-[10vw] md:px-[5vw] text-center md:text-left">
+          <p className="text-[2rem] font-bold text-white">Projects</p>
           <p className="text-[1rem] text-white">
             This page is a collection of the projects I have and am completing. Links are provided for the source code
             where possible (source code for works completed through UNSW courses are not provided due to plagiarism and
             intellectual property concerns - demo recordings of applications made may be provided).
           </p>
-        </ProjectsIntro>
-        <ProjectsSection>
-          <h1 className="m-[0] text-[1.5rem] font-bold text-black">UNSW Mending Broken Hearts</h1>
-          <p className="m-[0] text-[0.7rem] text-black">Project Timeline: Feb 2025 - Present</p>
-          <p className="m-[0] text-[1rem] text-black">
-            UNSW Mending Broken Hearts is a student led project involving a hands on experience where we design and
-            build a total artificial heart prototype (owned by UNSW) in collaboration with academic researchers. As a
-            VIP Student, I was able to work as a <i>Software Engineer</i> as part of the Software Team. My main
-            responsibilities involved designing and refining the patient app accompanying the total artificial heart and
-            building the website and desktop app for clinician access. I was also collaborating with other teams (mainly
-            the Systems team) in working to integrate sensors and Bluetooth into the app backend.
-          </p>
-        </ProjectsSection>
-        <ProjectsSection>
-          <h1 className="m-[0] text-[1.5rem] font-bold text-black">This website!</h1>
-          <p className="m-[0] text-[0.7rem] text-black">Project Timeline: Jan 2024 - Present</p>
-          <p className="m-[0] text-[1rem] text-black">
-            This website started out as a way for me to collect all my projects into a portfolio and also learn more
-            about the frontend programming languages HTML, CSS, JavaScript. Overtime, I've continued to work on building
-            this website using those same languages. Additionally, after taking frontend related courses, I have also
-            applied my knowledge about React and Vite (setting up the website as a React project using Vite) to enhance
-            the site by design and usability. This website was published in January 2025 and is an ongoing project.
-          </p>
-          <SourceButton
-            onClick={() =>
-              window.open("https://github.com/agnes-tjokrosetio/personal", "_blank", "noopener,noreferrer")
-            }
-          >
-            View Source Code
-          </SourceButton>
-        </ProjectsSection>
+        </div>
+        <div className="flex flex-col gap-6 px-[5vw]">
+          {projects.map((project, index) => (
+            <div key={index} className="bg-white rounded-2xl p-6 flex flex-col gap-3">
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
+                <p className="text-xl font-bold text-gray-900">{project.name}</p>
+                <span className="text-sm text-gray-500">Project Timeline: {project.date}</span>
+              </div>
+              <p className="text-sm text-gray-700">{project.description}</p>
+              <div className="flex gap-4 mt-2 flex-wrap">
+                {project.code && (
+                  <button
+                    onClick={() => window.open(project.code, "_blank", "noopener,noreferrer")}
+                    className="bg-black text-white !text-sm px-4 py-2 rounded hover:text-gray-500 hover:!bg-[white] hover:!border-[black]"
+                  >
+                    View Code
+                  </button>
+                )}
+                {project.demo && (
+                  <button
+                    onClick={() => window.open(project.demo, "_blank", "noopener,noreferrer")}
+                    className="bg-black text-white !text-sm px-4 py-2 rounded bg-[#1a1a1a] text-white hover:text-gray-500 hover:!bg-[white] hover:!border-[black]"
+                  >
+                    View Demo
+                  </button>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
         <ContactInformation />
       </PageScreen>
     </>

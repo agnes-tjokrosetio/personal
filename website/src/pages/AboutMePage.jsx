@@ -10,10 +10,77 @@ import {
   workExperience,
 } from "../components/info";
 
+const Section = ({ title, children }) => (
+  <div className="flex flex-col text-black bg-[#f8f8f8] gap-6 px-[5vw] py-[10vh] border-t border-gray-400">
+    <p className="text-[1.5rem] font-bold text-black">{title}</p>
+    {children}
+  </div>
+);
+
+const ExperienceCard = ({ item }) => (
+  <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 p-6 flex flex-col gap-2">
+    <div className="flex items-center gap-4">
+      <div className="bg-gray-100 rounded-full w-12 h-12 flex items-center justify-center">
+        <i className="fa fa-briefcase text-gray-500 text-lg" />
+      </div>
+      <div>
+        <h3 className="text-md font-bold text-gray-900">{item.title}</h3>
+        <p className="text-sm text-gray-500">{item.company}</p>
+      </div>
+    </div>
+    <div className="flex items-center gap-2 text-sm text-gray-500 mt-2">
+      <i className="fa fa-calendar" aria-hidden="true"></i>
+      <span>{item.date}</span>
+    </div>
+    {item.details && (
+      <ul className="list-disc list-inside text-sm text-gray-700 mt-2 ml-2">
+        {item.details.map((detail, i) => (
+          <li key={i}>{detail}</li>
+        ))}
+      </ul>
+    )}
+  </div>
+);
+
+const SkillCard = ({ skill }) => (
+  <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 p-6 flex flex-col gap-4">
+    <h3 className="text-lg font-bold text-gray-900">{skill.type}</h3>
+    <div className="flex flex-wrap gap-2">
+      {skill.details.map((item, i) => (
+        <span key={i} className="bg-gray-100 text-gray-700 text-sm px-3 py-1 rounded-full">
+          {item}
+        </span>
+      ))}
+    </div>
+  </div>
+);
+
+const CourseCard = ({ course, category }) => (
+  <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 p-6 flex flex-col gap-2">
+    <div className="flex items-center gap-3">
+      <div className="bg-gray-100 text-gray-600 rounded-full p-2">
+        <i className={`fa ${category === "Computer Science" ? "fa-code" : "fa-line-chart"} text-lg`} />
+      </div>
+      <h3 className="text-md font-bold text-gray-900">{category}</h3>
+    </div>
+    <p className="text-sm text-gray-700 mt-2">{course.course}</p>
+    <span className="bg-green-100 text-green-700 text-xs font-semibold w-fit px-3 py-1 rounded-full mt-2">
+      {course.mark}
+    </span>
+  </div>
+);
+
+const InterestCard = ({ item }) => (
+  <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 p-6 flex flex-row items-center gap-4">
+    <div className="bg-gray-100 rounded-full w-12 h-12 flex items-center justify-center">
+      <i className={`fa ${item.icon} text-gray-500 text-lg`} />
+    </div>
+    <p className="text-[1rem] text-black">{item.label}</p>
+  </div>
+);
+
 function AboutMePage() {
-  React.useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  React.useEffect(() => window.scrollTo(0, 0), []);
 
   const csCourses = relevantCourses.filter((course) => course.degree === "Computer Science");
   const finsCourses = relevantCourses.filter((course) => course.degree === "Finance");
@@ -55,181 +122,48 @@ function AboutMePage() {
             </button>
           </div>
         </div>
-
-        <div className="flex flex-col text-black bg-[#f8f8f8] gap-6 px-[5vw] py-[10vh] border-t border-gray-400">
-          <p className="text-[1.5rem] font-bold text-black">Experience</p>
+        <Section title="Experience">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {workExperience.map((item, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 p-6 flex flex-col gap-2"
-              >
-                <div className="flex items-center gap-4">
-                  <div className="bg-gray-100 rounded-full w-12 h-12 flex items-center justify-center">
-                    <i className="fa fa-briefcase text-gray-500 text-lg" />
-                  </div>
-                  <div>
-                    <h3 className="text-md font-bold text-gray-900">{item.title}</h3>
-                    <p className="text-sm text-gray-500">{item.company}</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-gray-500 mt-2">
-                  <i className="fa fa-calendar" aria-hidden="true"></i>
-                  <span>{item.date}</span>
-                </div>
-                {item.details && (
-                  <ul className="list-disc list-inside text-sm text-gray-700 mt-2 ml-2">
-                    {item.details.map((detail, i) => (
-                      <li key={i}>{detail}</li>
-                    ))}
-                  </ul>
-                )}
-              </div>
+              <ExperienceCard key={index} item={item} />
             ))}
           </div>
-        </div>
-
-        <div className="flex flex-col text-black bg-[#f8f8f8] gap-6 px-[5vw] py-[10vh] border-t border-gray-400">
-          <p className="text-[1.5rem] font-bold text-black">Relevant Skills</p>
+        </Section>
+        <Section title="Relevant Skills">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {relevantSkills.map((skill, index) => {
-              const visibleSkills = skill.details.slice(0, 4);
-              const remainingCount = skill.details.length - visibleSkills.length;
-              return (
-                <div
-                  key={index}
-                  className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 p-6 flex flex-col gap-4"
-                >
-                  <h3 className="text-lg font-bold text-gray-900">{skill.type}</h3>
-
-                  <div className="flex flex-wrap gap-2">
-                    {visibleSkills.map((item, i) => (
-                      <span key={i} className="bg-gray-100 text-gray-700 text-sm px-3 py-1 rounded-full">
-                        {item}
-                      </span>
-                    ))}
-                    {remainingCount > 0 && (
-                      <span className="bg-[#242424] text-[white] text-sm px-3 py-1 rounded-full cursor-pointer hover:bg-gray-300 hover:text-[black]">
-                        +{remainingCount} more
-                      </span>
-                    )}
-                  </div>
-                </div>
-              );
-            })}
+            {relevantSkills.map((skill, index) => (
+              <SkillCard key={index} skill={skill} />
+            ))}
           </div>
-        </div>
-
-        <div className="flex flex-col text-black bg-[#f8f8f8] gap-6 px-[5vw] py-[10vh] border-t border-gray-400">
-          <p className="text-[1.5rem] font-bold text-black">Relevant Courses</p>
-          <div>
-            <h2 className="text-[1.25rem] font-semibold mb-4">Computer Science</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-              {csCourses.map((course, index) => (
-                <div
-                  key={index}
-                  className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 p-6 flex flex-col gap-2"
-                >
-                  <div className="flex items-center gap-3">
-                    <div className="bg-gray-100 text-gray-600 rounded-full p-2">
-                      <i className="fa fa-code text-lg" />
-                    </div>
-                    <h3 className="text-md font-bold text-gray-900">Computer Science</h3>
-                  </div>
-                  <p className="text-sm text-gray-700 mt-2">{course.course}</p>
-                  <span className="bg-green-100 text-green-700 text-xs font-semibold w-fit px-3 py-1 rounded-full mt-2">
-                    {course.mark}
-                  </span>
-                </div>
-              ))}
-            </div>
+        </Section>
+        <Section title="Relevant Courses">
+          <h2 className="text-[1.25rem] font-semibold mb-4">Computer Science</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            {csCourses.map((course, index) => (
+              <CourseCard key={index} course={course} category="Computer Science" />
+            ))}
           </div>
-          <div>
-            <h2 className="text-[1.25rem] font-semibold mb-4">Finance</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-              {finsCourses.map((course, index) => (
-                <div
-                  key={index}
-                  className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 p-6 flex flex-col gap-2"
-                >
-                  <div className="flex items-center gap-3">
-                    <div className="bg-gray-100 text-gray-600 rounded-full p-2">
-                      <i className="fa fa-line-chart text-lg" />
-                    </div>
-                    <h3 className="text-md font-bold text-gray-900">Finance</h3>
-                  </div>
-                  <p className="text-sm text-gray-700 mt-2">{course.course}</p>
-                  <span className="bg-green-100 text-green-700 text-xs font-semibold w-fit px-3 py-1 rounded-full mt-2">
-                    {course.mark}
-                  </span>
-                </div>
-              ))}
-            </div>
+          <h2 className="text-[1.25rem] font-semibold mb-4 mt-6">Finance</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            {finsCourses.map((course, index) => (
+              <CourseCard key={index} course={course} category="Finance" />
+            ))}
           </div>
-        </div>
-
-        <div className="flex flex-col text-black bg-[#f8f8f8] gap-6 px-[5vw] py-[5vh] border-t border-gray-400">
-          <p className="text-[1.5rem] font-bold text-black">Interested Pathways</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="bg-[white] rounded-2xl shadow-md p-6 flex flex-col gap-2">
-              <h2 className="text-[1.2rem] font-semibold text-gray-800 mb-2">Computer Science</h2>
-              <ul className="list-disc list-inside text-[1rem] text-black space-y-1">
-                <li>Front-End Developing and/or Engineering</li>
-                <li>Software Engineering</li>
-                <li>Software Product Development</li>
-              </ul>
-            </div>
-            <div className="bg-[white] rounded-2xl shadow-md p-6 flex flex-col gap-2">
-              <h2 className="text-[1.2rem] font-semibold text-gray-800 mb-2">Finance</h2>
-              <ul className="list-disc list-inside text-[1rem] text-black space-y-1">
-                <li>Investment Banking</li>
-                <li>Private Equity</li>
-                <li>Real Estate Finance</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex flex-col text-black bg-[#f8f8f8] gap-6 px-[5vw] py-[10vh] border-t border-gray-400">
-          <p className="text-[1.5rem] font-bold text-black">Leadership, Activities and Volunteering</p>
+        </Section>
+        <Section title="Leadership, Activities and Volunteering">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {volunteeringActivities.map((item, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 p-6 flex flex-col gap-2"
-              >
-                <div className="flex items-center gap-4">
-                  <div className="bg-gray-100 rounded-full w-12 h-12 flex items-center justify-center">
-                    <i className="fa fa-users text-gray-500 text-lg" />
-                  </div>
-                  <div>
-                    <h3 className="text-md font-bold text-gray-900">{item.title}</h3>
-                    <p className="text-sm text-gray-500">{item.society}</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-gray-500 mt-2">
-                  <i className="fa fa-calendar" aria-hidden="true"></i>
-                  <span>{item.date}</span>
-                </div>
-              </div>
+              <ExperienceCard key={index} item={item} />
             ))}
           </div>
-        </div>
-
-        <div className="flex flex-col text-black gap-6 bg-[#f8f8f8] px-[5vw] py-[5vh] border-t border-gray-400">
-          <p className="text-[1.5rem] font-bold text-black">Hobbies / Interests</p>
+        </Section>
+        <Section title="Hobbies / Interests">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             {interestAreas.map((item, index) => (
-              <div key={index} className="bg-white rounded-2xl shadow-md p-6 flex flex-row items-center gap-4">
-                <div className="bg-gray-100 rounded-full w-12 h-12 flex items-center justify-center">
-                  <i className={`fa ${item.icon} text-gray-500 text-lg`} />
-                </div>
-                <p className="text-[1rem] text-black">{item.label}</p>
-              </div>
+              <InterestCard key={index} item={item} />
             ))}
           </div>
-        </div>
-
+        </Section>
         <ContactInformation />
       </PageScreen>
     </>

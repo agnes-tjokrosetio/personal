@@ -17,9 +17,7 @@ import aboutMeImg from "../assets/about-me.jpg";
 import projectsImg from "../assets/projects.jpg";
 
 function LandingPage() {
-  React.useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  React.useEffect(() => window.scrollTo(0, 0), []);
 
   const navigate = useNavigate();
   return (

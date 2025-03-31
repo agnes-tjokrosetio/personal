@@ -26,7 +26,7 @@ function LandingPage() {
       <PageScreen>
         <WelcomeSection>
           <div className="bg-[#1a1a1a] m-8 w-[65%] h-auto p-4 gap-4 flex flex-col justify-center items-center rounded-[10px]">
-            <img src={profilePhoto} alt="Profile" className="h-[100%] w-auto rounded-[10px] object-cover" />
+            <img src={profilePhoto} alt="Profile" className="w-[100%] h-auto rounded-[10px] object-cover" />
             <div className="flex flex-row gap-6">
               <ContactIcon
                 href="https://www.linkedin.com/in/agnestjokrosetio/"

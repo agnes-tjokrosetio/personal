@@ -42,7 +42,7 @@ function AboutMePage() {
           </p>
           <div className="flex justify-center md:justify-start w-full pt-2">
             <button
-              className="w-auto max-w-max bg-[#1a1a1a] text-white hover:text-gray-500 px-6 py-2 font-semibold"
+              className="w-auto max-w-max bg-[#1a1a1a] text-white hover:text-gray-500 hover:!bg-[white] hover:!border-[white] px-6 py-2 font-semibold transition duration-300"
               onClick={() =>
                 window.open(
                   "https://agnes-tjokrosetio.github.io/personal/AT_Resume.pdf",
@@ -56,9 +56,9 @@ function AboutMePage() {
           </div>
         </div>
 
-        <div className="flex flex-col text-black bg-[#f8f8f8] gap-8 px-[5vw] py-[10vh] border-t border-gray-400">
+        <div className="flex flex-col text-black bg-[#f8f8f8] gap-6 px-[5vw] py-[10vh] border-t border-gray-400">
           <p className="text-[1.5rem] font-bold text-black">Experience</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {workExperience.map((item, index) => (
               <div
                 key={index}
@@ -89,9 +89,9 @@ function AboutMePage() {
           </div>
         </div>
 
-        <div className="flex flex-col text-black bg-[#f8f8f8] gap-8 px-[5vw] py-[10vh] border-t border-gray-400">
+        <div className="flex flex-col text-black bg-[#f8f8f8] gap-6 px-[5vw] py-[10vh] border-t border-gray-400">
           <p className="text-[1.5rem] font-bold text-black">Relevant Skills</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {relevantSkills.map((skill, index) => {
               const visibleSkills = skill.details.slice(0, 4);
               const remainingCount = skill.details.length - visibleSkills.length;
@@ -109,7 +109,7 @@ function AboutMePage() {
                       </span>
                     ))}
                     {remainingCount > 0 && (
-                      <span className="bg-[#242424] text-[white] text-sm px-3 py-1 rounded-full cursor-pointer hover:bg-blue-200">
+                      <span className="bg-[#242424] text-[white] text-sm px-3 py-1 rounded-full cursor-pointer hover:bg-gray-300 hover:text-[black]">
                         +{remainingCount} more
                       </span>
                     )}
@@ -120,11 +120,11 @@ function AboutMePage() {
           </div>
         </div>
 
-        <div className="flex flex-col text-black bg-[#f8f8f8] gap-8 px-[5vw] py-[10vh] border-t border-gray-400">
+        <div className="flex flex-col text-black bg-[#f8f8f8] gap-6 px-[5vw] py-[10vh] border-t border-gray-400">
           <p className="text-[1.5rem] font-bold text-black">Relevant Courses</p>
           <div>
             <h2 className="text-[1.25rem] font-semibold mb-4">Computer Science</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
               {csCourses.map((course, index) => (
                 <div
                   key={index}
@@ -146,7 +146,7 @@ function AboutMePage() {
           </div>
           <div>
             <h2 className="text-[1.25rem] font-semibold mb-4">Finance</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
               {finsCourses.map((course, index) => (
                 <div
                   key={index}
@@ -168,11 +168,9 @@ function AboutMePage() {
           </div>
         </div>
 
-        <div className="flex flex-col text-black bg-[#f8f8f8] px-[5vw] py-[5vh] border-t border-gray-400">
-          <p className="text-[1.5rem] font-bold text-black mb-6">Interested Pathways</p>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Computer Science Pathways */}
+        <div className="flex flex-col text-black bg-[#f8f8f8] gap-6 px-[5vw] py-[5vh] border-t border-gray-400">
+          <p className="text-[1.5rem] font-bold text-black">Interested Pathways</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="bg-[white] rounded-2xl shadow-md p-6 flex flex-col gap-2">
               <h2 className="text-[1.2rem] font-semibold text-gray-800 mb-2">Computer Science</h2>
               <ul className="list-disc list-inside text-[1rem] text-black space-y-1">
@@ -181,8 +179,6 @@ function AboutMePage() {
                 <li>Software Product Development</li>
               </ul>
             </div>
-
-            {/* Finance Pathways */}
             <div className="bg-[white] rounded-2xl shadow-md p-6 flex flex-col gap-2">
               <h2 className="text-[1.2rem] font-semibold text-gray-800 mb-2">Finance</h2>
               <ul className="list-disc list-inside text-[1rem] text-black space-y-1">
@@ -194,9 +190,9 @@ function AboutMePage() {
           </div>
         </div>
 
-        <div className="flex flex-col text-black bg-[#f8f8f8] gap-8 px-[5vw] py-[10vh] border-t border-gray-400">
+        <div className="flex flex-col text-black bg-[#f8f8f8] gap-6 px-[5vw] py-[10vh] border-t border-gray-400">
           <p className="text-[1.5rem] font-bold text-black">Leadership, Activities and Volunteering</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {volunteeringActivities.map((item, index) => (
               <div
                 key={index}
@@ -220,9 +216,9 @@ function AboutMePage() {
           </div>
         </div>
 
-        <div className="flex flex-col text-black gap-8 bg-[#f8f8f8] px-[5vw] py-[5vh] border-t border-gray-400">
+        <div className="flex flex-col text-black gap-6 bg-[#f8f8f8] px-[5vw] py-[5vh] border-t border-gray-400">
           <p className="text-[1.5rem] font-bold text-black">Hobbies / Interests</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             {interestAreas.map((item, index) => (
               <div key={index} className="bg-white rounded-2xl shadow-md p-6 flex flex-row items-center gap-4">
                 <div className="bg-gray-100 rounded-full w-12 h-12 flex items-center justify-center">

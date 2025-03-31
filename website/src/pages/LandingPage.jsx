@@ -11,7 +11,6 @@ import {
   ContactIcon,
   WelcomeButtons,
 } from "../components/Styles";
-
 import ContactInformation from "../components/ContactInformation";
 import profilePhoto from "../assets/profile-photo.jpg";
 import aboutMeImg from "../assets/about-me.jpg";
@@ -59,16 +58,10 @@ function LandingPage() {
             </p>
             <WelcomeButtons>
               <button
-                className="bg-[#1a1a1a] text-white hover:text-gray-500 px-6 py-2 font-semibold"
+                className="bg-[#1a1a1a] text-white hover:text-gray-500 hover:!bg-[white] hover:!border-white px-6 py-2 font-semibold"
                 onClick={() => navigate("/aboutme")}
               >
-                About Me
-              </button>
-              <button
-                className="bg-[#1a1a1a] text-white hover:text-gray-500 px-6 py-2 font-semibold"
-                onClick={() => navigate("/projects")}
-              >
-                View My Projects
+                See More
               </button>
             </WelcomeButtons>
           </div>
@@ -76,12 +69,17 @@ function LandingPage() {
 
         <ViewSection>
           <ViewType bgimage={aboutMeImg} onClick={() => navigate("/aboutme")}>
-            <p className="text-[1.5rem] font-[600]">About Me</p>
-            <Divider />
+            <div className="background" />
+            <div className="content">
+              <p className="text-[1.5rem] font-[600]">About Me</p>
+            </div>
           </ViewType>
+
           <ViewType bgimage={projectsImg} onClick={() => navigate("/projects")}>
-            <p className="text-[1.5rem] font-[600]">Projects</p>
-            <Divider />
+            <div className="background" />
+            <div className="content">
+              <p className="text-[1.5rem] font-[600]">View My Projects</p>
+            </div>
           </ViewType>
         </ViewSection>
         <ContactInformation />

@@ -111,30 +111,79 @@ export const ViewSection = styled.div`
   justify-content: center;
   @media (max-width: 768px) {
     flex-direction: column;
-    margin: 5vh 0;
   }
 `;
 
+// export const ViewType = styled.div`
+//   position: relative;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   text-align: center;
+//   padding: 10vh 5vw;
+//   width: 50vw;
+//   overflow: hidden;
+//   color: white;
+
+//   @media (max-width: 768px) {
+//     width: auto;
+//   }
+
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     inset: 0;
+//     background-image: ${({ bgimage }) => `url(${bgimage})`};
+//     background-position: left;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     transition: opacity 0.3s ease-in-out;
+//     z-index: 0;
+//   }
+
+//   &:hover::before {
+//     opacity: 0.7;
+//   }
+
+//   > * {
+//     position: relative;
+//     z-index: 1;
+//   }
+// `;
 export const ViewType = styled.div`
+  position: relative;
+  width: 50vw;
+  padding: 10vh 5vw;
+  color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 10vh 5vw;
-  width: 50vw;
-  background-image: ${({ bgimage }) => `url(${bgimage})`};
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition: 0.3s ease-in-out;
+  overflow: hidden;
 
   @media (max-width: 768px) {
     width: auto;
   }
 
-  &:hover {
+  .background {
+    position: absolute;
+    inset: 0;
+    background-image: ${({ bgimage }) => `url(${bgimage})`};
+    background-size: cover;
+    background-position: left;
+    z-index: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  &:hover .background {
     opacity: 0.7;
+  }
+
+  .content {
+    position: relative;
+    z-index: 1;
   }
 `;
 

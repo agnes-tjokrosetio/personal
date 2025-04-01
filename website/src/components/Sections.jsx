@@ -145,7 +145,7 @@ const CourseCard = ({ course, category }) => (
       <h3 className="text-md font-bold text-gray-900">{category}</h3>
     </div>
     <p className="text-sm text-gray-700 mt-2">{course.course}</p>
-    <span className="bg-green-100 text-green-700 text-xs font-semibold w-fit px-3 py-1 rounded-full mt-2">
+    <span className="bg-green-100 text-black text-xs font-semibold w-fit px-3 py-1 rounded-full mt-2">
       {course.mark}
     </span>
   </div>

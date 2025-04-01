@@ -33,12 +33,18 @@ const ExperienceCard = ({ item }) => (
       <span>{item.date}</span>
     </div>
     {item.details && (
-      <ul className="list-disc list-inside text-sm text-gray-700 mt-2 ml-2">
-        {item.details.map((detail, i) => (
-          <li key={i}>{detail}</li>
-        ))}
-      </ul>
+      <div className="flex flex-col items-left gap-2 text-sm text-gray-500 mt-2">
+        <span>Roles:</span>
+        <ul className="list-disc list-inside text-sm text-gray-700 mt-2 ml-2">
+          {item.details.map((detail, i) => (
+            <li key={i}>{detail}</li>
+          ))}
+        </ul>
+      </div>
     )}
+    <div className="flex items-center gap-2 text-sm text-black mt-2">
+      <span>{item.description}</span>
+    </div>
   </div>
 );
 
@@ -58,7 +64,7 @@ const SkillCard = ({ skill }) => (
 const CourseCard = ({ course, category }) => (
   <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 p-6 flex flex-col gap-2">
     <div className="flex items-center gap-3">
-      <div className="bg-gray-100 text-gray-600 rounded-full p-2">
+      <div className="bg-gray-100 rounded-full w-12 h-12 flex items-center justify-center">
         <i className={`fa ${category === "Computer Science" ? "fa-code" : "fa-line-chart"} text-lg`} />
       </div>
       <h3 className="text-md font-bold text-gray-900">{category}</h3>
@@ -67,6 +73,27 @@ const CourseCard = ({ course, category }) => (
     <span className="bg-green-100 text-green-700 text-xs font-semibold w-fit px-3 py-1 rounded-full mt-2">
       {course.mark}
     </span>
+  </div>
+);
+
+const ActivitiesCard = ({ item }) => (
+  <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 p-6 flex flex-col gap-2">
+    <div className="flex items-center gap-4">
+      <div className="bg-gray-100 rounded-full w-12 h-12 flex items-center justify-center">
+        <i className="fa fa-users text-gray-500 text-lg" />
+      </div>
+      <div>
+        <h3 className="text-md font-bold text-gray-900">{item.title}</h3>
+        <p className="text-sm text-gray-500">{item.society}</p>
+      </div>
+    </div>
+    <div className="flex items-center gap-2 text-sm text-gray-500 mt-2">
+      <i className="fa fa-calendar" aria-hidden="true"></i>
+      <span>{item.date}</span>
+    </div>
+    <div className="flex items-center gap-2 text-sm text-black mt-2">
+      <span>{item.description}</span>
+    </div>
   </div>
 );
 
@@ -153,7 +180,7 @@ function AboutMePage() {
         <Section title="Leadership, Activities and Volunteering">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {volunteeringActivities.map((item, index) => (
-              <ExperienceCard key={index} item={item} />
+              <ActivitiesCard key={index} item={item} />
             ))}
           </div>
         </Section>

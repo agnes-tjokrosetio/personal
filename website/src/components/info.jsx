@@ -4,21 +4,29 @@ export const workExperience = [
     company: "UNSW",
     date: "Sep 2024 - Present",
     details: ["Computer Systems Fundamentals (COMP1521) Lab Assistant", "Exam Invigilator"],
+    description:
+      "Tutoring and lab assisting multiple classes in the course Computer Systems Fundamentals (COMP1521). Conducted labs to guide other students in understanding the course content, facilitating help sessions and assisting on online forums. Performed marking of students’ assignments and exams and invigilated examinations.",
   },
   {
     title: "Student Mentor",
     company: "UNSW",
     date: "May 2024 - Present",
+    description:
+      "As part of the Engineering Social Study Hub, provide peer tutoring and support to first year students required to take mathematics courses (e.g. Mathematics 1A, Mathematics 1B, Discrete Mathematics). Involved in creating a study hub with a comfortable and supportive environment where first year students can seek guidance, and work with fellow students.",
   },
   {
     title: "Mathematics Tutor / Marker",
     company: "Dr Du Education",
     date: "Feb 2023 - Present",
+    description:
+      "Responsible for tutoring numerous senior high school students in Mathematics courses (Advanced, Extension 1 and Extension 2 Mathematics). Taught with clarity and patience by guiding students through assigned weekly homework and conducting weekly quiz supervision and quiz explanations. Also marked weekly homework and quizzes conducted at the centre.",
   },
   {
     title: "Tutor",
     company: "Abacus Coaching Centre",
     date: "Jan 2020 - Jan 2022",
+    description:
+      "Supervised a number of small grouped primary school students (Kindergarten to Year 6) and teaching Mathematics (simple mental arithmetic and more advanced worded problems) and English (reading, writing, grammar, and vocabulary).",
   },
 ];
 
@@ -82,21 +90,29 @@ export const volunteeringActivities = [
     title: "IT Director",
     society: "UNSW Financial Technology Society",
     date: "Nov 2024 - Present",
+    description:
+      "Maintaining operation functionality of the society through managing various IT platforms (including the society website, communication channels, emails and cloud drive).",
   },
   {
     title: "General Vollie",
     society: "UNSW Arc Wellness Warriors",
     date: "May 2024 - Present",
+    description:
+      "As part of the Wellness Warrior team, challenge the struggles that are associated with student mental health and well-being with in-person and online activations, Stress Less Week and spreading the wellness message including awareness of wellbeing. Involved with promoting well-being events and coordinating with other members to run the weekly in-person and online activations.",
   },
   {
     title: "Peer Mentor",
     society: "UNSW Computer Science and Engineering Society",
     date: "Jan 2024 - Apr 2024",
+    description:
+      "As part of the Peer Mentoring Team, we aimed to make incoming CSE students feel more supported, form friendships with other students, and get more involved in the CSE society. As part of a group (8 mentees), my co-mentor and I provided information, support and friendliness, networking opportunities, and early professional development for mentees",
   },
   {
     title: "Marketing Subcommitee",
     society: "UNSW Computer Science and Engineering Society",
     date: "Mar 2023 - Nov 2024",
+    description:
+      "Promoting events, opportunities and content provided by CSESoc to maximise reach by managing and expanding CSESoc's presence on social media platforms. Created promotional content using social media, photography and recording videos of CSESoc's social events. Worked with other subcommittee members and created graphic designs, written event descriptions and scheduled content on all social media platforms.",
   },
 ];
 

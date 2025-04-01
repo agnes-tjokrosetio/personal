@@ -54,13 +54,13 @@ export const AboutMeSections = () => {
         </div>
       </Section>
       <Section title="Relevant Courses">
-        <h2 className="text-[1.25rem] font-semibold mb-4">Computer Science</h2>
+        <h2 className="text-[1.25rem] font-semibold">Computer Science</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {csCourses.map((course, index) => (
             <CourseCard key={index} course={course} category="Computer Science" />
           ))}
         </div>
-        <h2 className="text-[1.25rem] font-semibold mb-4 mt-6">Finance</h2>
+        <h2 className="text-[1.25rem] font-semibold mt-6">Finance</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {finsCourses.map((course, index) => (
             <CourseCard key={index} course={course} category="Finance" />
@@ -137,7 +137,7 @@ const SkillCard = ({ skill }) => (
 );
 
 const CourseCard = ({ course, category }) => (
-  <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 p-6 flex flex-col gap-2">
+  <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 p-6 flex flex-col gap-1">
     <div className="flex items-center gap-3">
       <div className="bg-gray-100 rounded-full w-12 h-12 flex items-center justify-center">
         <i className={`fa ${category === "Computer Science" ? "fa-code" : "fa-line-chart"} text-lg`} />

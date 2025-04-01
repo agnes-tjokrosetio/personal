@@ -8,7 +8,7 @@ import {
   volunteeringActivities,
   workExperience,
   projects,
-} from "../components/info";
+} from "./info";
 
 export const PortfolioSelectionSection = () => (
   <div className="h-[40vh] flex justify-center flex-col md:flex-row">
@@ -86,7 +86,7 @@ export const AboutMeSections = () => {
 };
 
 const Section = ({ title, children }) => (
-  <div className="flex flex-col text-black bg-[#f8f8f8] gap-6 px-[5vw] py-[10vh] border-t border-gray-400">
+  <div className="flex flex-col text-black bg-[#f8f8f8] gap-6 px-[5vw] py-[5vh] border-t border-gray-400">
     <p className="text-[1.5rem] font-bold text-black">{title}</p>
     {children}
   </div>

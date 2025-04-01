@@ -21,14 +21,11 @@ const PortfolioType = ({ image, link, name }) => {
   const navigate = useNavigate();
   return (
     <div
-      className="relative md:w-[50vw] p-[10vh] [5vw] text-white flex flex-col items-center justify-center text-center overflow-hidden hover:bg-opacity-70"
+      className="relative md:w-[50vw] p-[10vh] [5vw] text-white flex flex-col items-center justify-center text-center overflow-hidden"
       style={{ backgroundImage: `url(${image})`, backgroundSize: "cover", backgroundPosition: "left" }}
       onClick={() => navigate(link)}
     >
-      <div className="absolute inset-0 z-0 transition-opacity duration-300 ease-in-out" />
-      <div className="relative z-10">
-        <p className="text-[1.5rem] font-semibold">{name}</p>
-      </div>
+      <p className="text-[1.5rem] font-semibold">{name}</p>
     </div>
   );
 };

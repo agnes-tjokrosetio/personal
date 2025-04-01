@@ -10,6 +10,38 @@ import {
   workExperience,
 } from "../components/info";
 
+const Intro = () => (
+  <div className="flex flex-col text-white gap-4 py-[8vh] px-[10vw] md:px-[5vw] text-center md:text-left">
+    <p className="text-[2rem] font-bold text-white">About Me</p>
+    <p className="text-[1rem] text-white">
+      I'm Agnes and I am currently a 3rd year UNSW student studying a Bachelor of Computer Science / Commerce, majoring
+      in Computer Science and Finance.
+    </p>
+    <p className="text-[1rem] text-white">
+      In terms of the pathways in Computer Science, I have a strong interest in software product development, software
+      engineering and frontend developing and engineering. As for Finance, I also have a strong interest in areas of
+      investment banking, private equity and real estate.
+    </p>
+    <p className="text-[1rem] text-white">
+      I am known for being an enthusiastic learner and with a bubbly and empathetic nature. I am looking for
+      opportunities to creating intuitive and engaging user experiences by using my technical skills and further develop
+      my understanding of design and programming by learning from industry professionals. I am also keen on further
+      developing my knowledge in investing and managing money to grow with businesses on expanding operations and
+      sources of funding.
+    </p>
+    <div className="flex justify-center md:justify-start w-full pt-2">
+      <button
+        className="w-auto max-w-max bg-[#1a1a1a] text-white hover:text-gray-500 hover:!bg-[white] hover:!border-[white] px-6 py-2 font-semibold transition duration-300"
+        onClick={() =>
+          window.open("https://agnes-tjokrosetio.github.io/personal/AT_Resume.pdf", "_blank", "noopener,noreferrer")
+        }
+      >
+        RESUME
+      </button>
+    </div>
+  </div>
+);
+
 const Section = ({ title, children }) => (
   <div className="flex flex-col text-black bg-[#f8f8f8] gap-6 px-[5vw] py-[10vh] border-t border-gray-400">
     <p className="text-[1.5rem] font-bold text-black">{title}</p>
@@ -116,39 +148,7 @@ function AboutMePage() {
     <>
       <NavigationBar />
       <PageScreen>
-        <div className="flex flex-col text-white gap-4 py-[8vh] px-[10vw] md:px-[5vw] text-center md:text-left">
-          <p className="text-[2rem] font-bold text-white">About Me</p>
-          <p className="text-[1rem] text-white">
-            I'm Agnes and I am currently a 3rd year UNSW student studying a Bachelor of Computer Science / Commerce,
-            majoring in Computer Science and Finance.
-          </p>
-          <p className="text-[1rem] text-white">
-            In terms of the pathways in Computer Science, I have a strong interest in software product development,
-            software engineering and frontend developing and engineering. As for Finance, I also have a strong interest
-            in areas of investment banking, private equity and real estate.
-          </p>
-          <p className="text-[1rem] text-white">
-            I am known for being an enthusiastic learner and with a bubbly and empathetic nature. I am looking for
-            opportunities to creating intuitive and engaging user experiences by using my technical skills and further
-            develop my understanding of design and programming by learning from industry professionals. I am also keen
-            on further developing my knowledge in investing and managing money to grow with businesses on expanding
-            operations and sources of funding.
-          </p>
-          <div className="flex justify-center md:justify-start w-full pt-2">
-            <button
-              className="w-auto max-w-max bg-[#1a1a1a] text-white hover:text-gray-500 hover:!bg-[white] hover:!border-[white] px-6 py-2 font-semibold transition duration-300"
-              onClick={() =>
-                window.open(
-                  "https://agnes-tjokrosetio.github.io/personal/AT_Resume.pdf",
-                  "_blank",
-                  "noopener,noreferrer"
-                )
-              }
-            >
-              RESUME
-            </button>
-          </div>
-        </div>
+        <Intro />
         <Section title="Experience">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {workExperience.map((item, index) => (

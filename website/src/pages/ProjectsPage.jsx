@@ -4,6 +4,17 @@ import NavigationBar from "../components/NavigationBar";
 import { PageScreen } from "../components/Styles";
 import { projects } from "../components/info";
 
+const Intro = () => (
+  <div className="flex flex-col text-white gap-4 py-[8vh] px-[10vw] md:px-[5vw] text-center md:text-left">
+    <p className="text-[2rem] font-bold text-white">Projects</p>
+    <p className="text-[1rem] text-white">
+      This page is a collection of the projects I have and am completing. Links are provided for the source code where
+      possible (source code for works completed through UNSW courses are not provided due to plagiarism and intellectual
+      property concerns - demo recordings of applications made may be provided).
+    </p>
+  </div>
+);
+
 function ProjectsPage() {
   React.useEffect(() => window.scrollTo(0, 0), []);
 
@@ -11,14 +22,7 @@ function ProjectsPage() {
     <>
       <NavigationBar />
       <PageScreen>
-        <div className="flex flex-col text-white gap-4 py-[8vh] px-[10vw] md:px-[5vw] text-center md:text-left">
-          <p className="text-[2rem] font-bold text-white">Projects</p>
-          <p className="text-[1rem] text-white">
-            This page is a collection of the projects I have and am completing. Links are provided for the source code
-            where possible (source code for works completed through UNSW courses are not provided due to plagiarism and
-            intellectual property concerns - demo recordings of applications made may be provided).
-          </p>
-        </div>
+        <Intro />
         <div className="flex flex-col gap-6 px-[5vw]">
           {projects.map((project, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 flex flex-col gap-3">

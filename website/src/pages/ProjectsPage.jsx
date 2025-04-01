@@ -1,9 +1,9 @@
 import React from "react";
-import ContactInformation from "../components/ContactInformation";
-import NavigationBar from "../components/NavigationBar";
-import { ProjectsIntro } from "../components/Intros";
-import { ProjectsSection } from "../components/Sections";
-import PageScreen from "../components/PageScreen";
+import ContactInformation from "../components/layout/ContactInformation";
+import NavigationBar from "../components/layout/NavigationBar";
+import { ProjectsIntro } from "../components/containers/Intros";
+import { ProjectsSection } from "../components/containers/Sections";
+import PageScreen from "../components/layout/PageScreen";
 
 function ProjectsPage() {
   React.useEffect(() => window.scrollTo(0, 0), []);

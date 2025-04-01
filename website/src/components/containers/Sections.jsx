@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import aboutMeImg from "../assets/about-me.jpg";
-import projectsImg from "../assets/projects.jpg";
+import aboutMeImg from "../../assets/about-me.jpg";
+import projectsImg from "../../assets/projects.jpg";
 import {
   interestAreas,
   relevantCourses,
@@ -8,7 +8,7 @@ import {
   volunteeringActivities,
   workExperience,
   projects,
-} from "./info";
+} from "../data/info";
 
 export const PortfolioSelectionSection = () => (
   <div className="h-[40vh] flex justify-center flex-col md:flex-row">

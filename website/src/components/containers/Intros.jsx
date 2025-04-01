@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import profilePhoto from "../assets/profile-photo.jpg";
+import profilePhoto from "../../assets/profile-photo.jpg";
 import "font-awesome/css/font-awesome.min.css";
 
 export const LandingIntro = () => {

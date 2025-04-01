@@ -1,7 +1,6 @@
 import React from "react";
 import ContactInformation from "../components/ContactInformation";
 import NavigationBar from "../components/NavigationBar";
-import { PageScreen } from "../components/Styles";
 import {
   interestAreas,
   relevantCourses,
@@ -10,7 +9,7 @@ import {
   workExperience,
 } from "../components/info";
 
-const Intro = () => (
+const AboutMeIntro = () => (
   <div className="flex flex-col text-white gap-4 py-[8vh] px-[10vw] md:px-[5vw] text-center md:text-left">
     <p className="text-[2rem] font-bold text-white">About Me</p>
     <p className="text-[1rem] text-white">
@@ -147,8 +146,8 @@ function AboutMePage() {
   return (
     <>
       <NavigationBar />
-      <PageScreen>
-        <Intro />
+      <div className="w-full min-h-screen flex flex-col bg-[#242424] overflow-x-hidden overflow-y-auto pt-[40px]">
+        <AboutMeIntro />
         <Section title="Experience">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {workExperience.map((item, index) => (
@@ -192,7 +191,7 @@ function AboutMePage() {
           </div>
         </Section>
         <ContactInformation />
-      </PageScreen>
+      </div>
     </>
   );
 }

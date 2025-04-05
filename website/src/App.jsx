@@ -6,7 +6,7 @@ import ProjectsPage from "./pages/ProjectsPage";
 
 function App() {
   return (
-    <HashRouter basename="/personal">
+    <HashRouter>
       <Routes>
         {/* Landing Page */}
         <Route path="/" element={<LandingPage />} />

@@ -83,7 +83,7 @@ export const AboutMeSections = () => {
 };
 
 const Section = ({ title, children }) => (
-  <div className="flex flex-col text-black bg-[#f8f8f8] gap-6 px-[5vw] py-[5vh] border-t border-gray-400">
+  <div className="flex flex-col text-black bg-[#f8f8f8] gap-6 px-10 py-15 border-t border-gray-400">
     <p className="text-[1.5rem] font-bold text-black">{title}</p>
     {children}
   </div>
@@ -125,7 +125,7 @@ const SkillCard = ({ skill }) => (
     <h3 className="text-lg font-bold text-gray-900">{skill.type}</h3>
     <div className="flex flex-wrap gap-2">
       {skill.details.map((item, i) => (
-        <span key={i} className="bg-gray-100 text-gray-700 text-sm px-3 py-1 rounded-full">
+        <span key={i} className="bg-gray-100 text-gray-700 text-sm px-4 py-2 rounded-full">
           {item}
         </span>
       ))}
@@ -142,7 +142,7 @@ const CourseCard = ({ course, category }) => (
       <h3 className="text-md font-bold text-gray-900">{category}</h3>
     </div>
     <p className="text-sm text-gray-700 mt-2">{course.course}</p>
-    <span className="bg-green-100 text-black text-xs font-semibold w-fit px-3 py-1 rounded-full mt-2">
+    <span className="bg-green-100 text-black text-xs font-semibold w-fit px-4 py-2 rounded-full mt-2">
       {course.mark}
     </span>
   </div>

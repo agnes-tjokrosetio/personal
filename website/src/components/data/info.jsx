@@ -17,7 +17,7 @@ export const workExperience = [
   {
     title: "Mathematics Tutor / Marker",
     company: "Dr Du Education",
-    date: "Feb 2023 - Present",
+    date: "Feb 2023 - Apr 2025",
     description:
       "Responsible for tutoring numerous senior high school students in Mathematics courses (Advanced, Extension 1 and Extension 2 Mathematics). Taught with clarity and patience by guiding students through assigned weekly homework and conducting weekly quiz supervision and quiz explanations. Also marked weekly homework and quizzes conducted at the centre.",
   },

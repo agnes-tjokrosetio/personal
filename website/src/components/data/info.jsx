@@ -45,7 +45,7 @@ export const relevantSkills = [
   },
   {
     type: "Frameworks and Libraries",
-    details: ["React.JS", "React Native"],
+    details: ["React.JS", "React Native", "shadcn/ui"],
   },
   {
     type: "Platforms",
@@ -53,7 +53,14 @@ export const relevantSkills = [
   },
   {
     type: "General",
-    details: ["Teamwork", "Project Management", "Time Management", "Communication", "Problem Solving", "Teaching"],
+    details: [
+      "Teamwork",
+      "Project Management",
+      "Time Management",
+      "Communication",
+      "Problem Solving",
+      "Teaching/Mentoring",
+    ],
   },
 ];
 

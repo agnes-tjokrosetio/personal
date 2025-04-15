@@ -166,7 +166,7 @@ export const projects = [
     description:
       "As part of a project for a web frontend development course (COMP6080), my partner and I created an alternative to slides.com that is a lean, lightweight app called Presto. The application was completed in React.js and adhered to a set of requirements: login & presentation creation (landing, login and register pages + logout actions), setting up slides (dashboard page, presentation controls ie. creating and deleting presentation and slides, listing presentations, editing), putting elements on a slide (code, images, videos, text, movable and resizeable elements), and other features (revision history, url updating, slide transitioning).",
     code: "",
-    demo: "",
+    demo: "https://youtu.be/67hhplATrN0",
   },
   {
     name: "this website!",

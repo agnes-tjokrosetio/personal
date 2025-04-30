@@ -105,7 +105,7 @@ export const volunteeringActivities = [
     society: "UNSW Financial Technology Society",
     date: "Nov 2024 - Present",
     description:
-      "Maintaining operation functionality of the society through managing various IT platforms (including the society website, communication channels, emails and cloud drive).",
+      "Maintaining operation functionality of the society through managing various IT platforms (including the society website, communication channels, emails and cloud drive). My co-directors and I were also responsible for leading and managing a team of subcommittee to coordinate the use of technology. We also handled the marking for the annual Algothon competition.",
   },
   {
     title: "General Vollie",

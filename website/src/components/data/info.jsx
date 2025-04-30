@@ -49,7 +49,16 @@ export const relevantSkills = [
   },
   {
     type: "Platforms",
-    details: ["Microsoft Office & Teams", "Google Workspace", "GitLab/GitHub", "Maple", "VSCode", "RStudio", "Framer"],
+    details: [
+      "Microsoft Office & Teams",
+      "Google Workspace",
+      "GitLab/GitHub",
+      "Maple",
+      "VSCode",
+      "RStudio",
+      "Framer",
+      "Figma",
+    ],
   },
   {
     type: "General",

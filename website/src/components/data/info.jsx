@@ -95,6 +95,13 @@ export const relevantCourses = [
 export const volunteeringActivities = [
   {
     title: "IT Director",
+    society: "UNSW Forex Association",
+    date: "Apr 2025 - Present",
+    description:
+      "Responsible for design, building and maintaining UNSW FXA's website alongside my co-director as well as developing and optimising internal tools to streamline team workflows and collaboration. We were also responsible for leading and managing a team of subcommittee to facilitate growth and skill development whilst enhancing communication channels to improve member engagement.",
+  },
+  {
+    title: "IT Director",
     society: "UNSW Financial Technology Society",
     date: "Nov 2024 - Present",
     description:
@@ -103,7 +110,7 @@ export const volunteeringActivities = [
   {
     title: "General Vollie",
     society: "UNSW Arc Wellness Warriors",
-    date: "May 2024 - Present",
+    date: "May 2024 - Apr 2025",
     description:
       "As part of the Wellness Warrior team, challenge the struggles that are associated with student mental health and well-being with in-person and online activations, Stress Less Week and spreading the wellness message including awareness of wellbeing. Involved with promoting well-being events and coordinating with other members to run the weekly in-person and online activations.",
   },

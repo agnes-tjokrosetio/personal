@@ -98,14 +98,14 @@ export const volunteeringActivities = [
     society: "UNSW Forex Association",
     date: "Apr 2025 - Present",
     description:
-      "Responsible for design, building and maintaining UNSW FXA's website alongside my co-director as well as developing and optimising internal tools to streamline team workflows and collaboration. We were also responsible for leading and managing a team of subcommittee to facilitate growth and skill development whilst enhancing communication channels to improve member engagement.",
+      "Responsible for design, building and maintaining UNSW FXA's website alongside my co-director as well as developing and optimising internal tools to streamline team workflows and collaboration. We were also responsible for leading and managing a team of subcommittee to facilitate growth and skill development whilst enhancing communication channels to improve member engagement. We also organised team building activities and events for the portfolio team.",
   },
   {
     title: "IT Director",
     society: "UNSW Financial Technology Society",
     date: "Nov 2024 - Present",
     description:
-      "Maintaining operation functionality of the society through managing various IT platforms (including the society website, communication channels, emails and cloud drive). My co-directors and I were also responsible for leading and managing a team of subcommittee to coordinate the use of technology. We also handled the marking for the annual Algothon competition.",
+      "Maintaining operation functionality of the society through managing various IT platforms (including the society website, communication channels, emails and cloud drive). My co-directors and I were also responsible for leading and managing a team of subcommittee to oversee the technical maintenance of the society and handle the marking for the annual Algothon competition. We also organised team building activities and events for the portfolio team.",
   },
   {
     title: "General Vollie",

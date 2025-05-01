@@ -77,7 +77,7 @@ export const AboutMeIntro = () => (
       developing my knowledge in investing and managing money to grow with businesses on expanding operations and
       sources of funding.
     </p>
-    <div className="flex justify-center md:justify-start w-full pt-2">
+    {/* <div className="flex justify-center md:justify-start w-full pt-2">
       <button
         className="w-auto max-w-max bg-[#1a1a1a] text-white hover:text-gray-500 hover:!bg-[white] hover:!border-[white] px-6 py-2 font-semibold transition duration-300"
         onClick={() =>
@@ -86,7 +86,7 @@ export const AboutMeIntro = () => (
       >
         RESUME
       </button>
-    </div>
+    </div> */}
   </div>
 );
 

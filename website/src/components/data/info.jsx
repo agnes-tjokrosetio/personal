@@ -3,7 +3,7 @@ export const workExperience = [
     title: "Casual Academic",
     company: "UNSW",
     date: "Sep 2024 - Present",
-    details: ["Computer Systems Fundamentals (COMP1521) Lab Assistant", "Exam Invigilator"],
+    details: ["Computer Systems Fundamentals (COMP1521) Tutor & Lab Assistant", "Exam Invigilator"],
     description:
       "Tutoring and lab assisting multiple classes in the course Computer Systems Fundamentals (COMP1521). Conducted labs to guide other students in understanding the course content, facilitating help sessions and assisting on online forums. Performed marking of students’ assignments and exams and invigilated examinations.",
   },

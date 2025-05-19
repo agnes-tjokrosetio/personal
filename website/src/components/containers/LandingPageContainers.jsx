@@ -10,32 +10,6 @@ export const LandingIntro = () => {
     <div className="min-h-[75vh] h-auto px-[4vw] py-[3vh] flex items-center text-[#f5f5f5] flex-col justify-center text-center px-[3vw] md:flex-row md:justify-center md:text-left">
       <div className="bg-[#1a1a1a] m-8 w-[65%] h-auto p-4 gap-4 flex flex-col justify-center items-center rounded-[10px]">
         <img src={profilePhoto} alt="Profile" className="w-[100%] h-auto rounded-[10px] object-cover" />
-        <div className="flex flex-row gap-6">
-          <a
-            className="!text-white hover:text-gray-400 transition duration-300"
-            href="https://www.linkedin.com/in/agnestjokrosetio/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fa fa-linkedin !text-2xl" aria-hidden="true"></i>
-          </a>
-          <a
-            className="!text-white hover:text-gray-400 transition duration-300"
-            href="https://github.com/agnes-tjokrosetio"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fa fa-github !text-2xl" aria-hidden="true"></i>
-          </a>
-          <a
-            className="!text-white hover:text-gray-400 transition duration-300"
-            href="mailto:agnes.tjokrosetio@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fa fa-envelope !text-2xl" aria-hidden="true"></i>
-          </a>
-        </div>
       </div>
       <div className="flex flex-col gap-4 max-w-[800px] px-12 py-4">
         <p className="text-[2rem] font-extrabold text-[white]">Hi, I'm Agnes</p>

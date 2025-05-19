@@ -8,7 +8,7 @@ export const LandingIntro = () => {
   const navigate = useNavigate();
   return (
     <div className="min-h-[75vh] h-auto px-[4vw] py-[3vh] flex items-center text-[#f5f5f5] flex-col justify-center text-center px-[3vw] md:flex-row md:justify-center md:text-left">
-      <div className="bg-[#1a1a1a] w-[80%] md:w-[55%] h-auto m-8 p-4 md:p-6 flex flex-col justify-center items-center rounded-[10px]">
+      <div className="bg-[#1a1a1a] w-[80%] md:w-[55%] h-auto m-8 p-6 flex flex-col justify-center items-center rounded-[10px]">
         <img src={profilePhoto} alt="Profile" className="w-[100%] h-auto rounded-[10px] object-cover" />
       </div>
       <div className="flex flex-col gap-4 max-w-[800px] px-10 py-4">

@@ -1,5 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import profilePhoto from "../../assets/profile-photo.jpg";
+import aboutMeImg from "../../assets/about-me.jpg";
+import projectsImg from "../../assets/projects.jpg";
 import "font-awesome/css/font-awesome.min.css";
 
 export const LandingIntro = () => {
@@ -58,45 +60,22 @@ export const LandingIntro = () => {
   );
 };
 
-export const AboutMeIntro = () => (
-  <div className="flex flex-col text-white gap-4 py-[8vh] px-[10vw] md:px-[5vw] text-center md:text-left">
-    <p className="text-[2rem] font-bold text-white">About Me</p>
-    <p className="text-[1rem] text-white">
-      I'm Agnes and I am currently a 3rd year UNSW student studying a Bachelor of Computer Science / Commerce, majoring
-      in Computer Science and Finance.
-    </p>
-    <p className="text-[1rem] text-white">
-      In terms of the pathways in Computer Science, I have a strong interest in software product development, software
-      engineering and frontend developing and engineering. As for Finance, I also have a strong interest in areas of
-      investment banking, private equity and real estate.
-    </p>
-    <p className="text-[1rem] text-white">
-      I am known for being an enthusiastic learner and with a bubbly and empathetic nature. I am looking for
-      opportunities to creating intuitive and engaging user experiences by using my technical skills and further develop
-      my understanding of design and programming by learning from industry professionals. I am also keen on further
-      developing my knowledge in investing and managing money to grow with businesses on expanding operations and
-      sources of funding.
-    </p>
-    {/* <div className="flex justify-center md:justify-start w-full pt-2">
-      <button
-        className="w-auto max-w-max bg-[#1a1a1a] text-white hover:text-gray-500 hover:!bg-[white] hover:!border-[white] px-6 py-2 font-semibold transition duration-300"
-        onClick={() =>
-          window.open("https://agnes-tjokrosetio.github.io/personal/AT_Resume.pdf", "_blank", "noopener,noreferrer")
-        }
-      >
-        RESUME
-      </button>
-    </div> */}
+export const PortfolioSelectionSection = () => (
+  <div className="h-[40vh] flex justify-center flex-col md:flex-row">
+    <PortfolioType image={aboutMeImg} link="/aboutme" name="About Me" />
+    <PortfolioType image={projectsImg} link="/projects" name="View My Projects" />
   </div>
 );
 
-export const ProjectsIntro = () => (
-  <div className="flex flex-col text-white gap-4 py-[8vh] px-[10vw] md:px-[5vw] text-center md:text-left">
-    <p className="text-[2rem] font-bold text-white">Projects</p>
-    <p className="text-[1rem] text-white">
-      This page is a collection of the projects I have and am completing. Links are provided for the source code where
-      possible (source code for works completed through UNSW courses are not provided due to plagiarism and intellectual
-      property concerns - demo recordings of applications made may be provided).
-    </p>
-  </div>
-);
+const PortfolioType = ({ image, link, name }) => {
+  const navigate = useNavigate();
+  return (
+    <div
+      className="relative md:w-[50vw] p-[10vh] [5vw] text-white flex flex-col items-center justify-center text-center overflow-hidden"
+      style={{ backgroundImage: `url(${image})`, backgroundSize: "cover", backgroundPosition: "left" }}
+      onClick={() => navigate(link)}
+    >
+      <p className="text-[1.5rem] font-semibold">{name}</p>
+    </div>
+  );
+};

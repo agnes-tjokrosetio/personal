@@ -1,8 +1,7 @@
 import React from "react";
 import ContactInformation from "../components/layout/ContactInformation";
 import NavigationBar from "../components/layout/NavigationBar";
-import { ProjectsIntro } from "../components/containers/Intros";
-import { ProjectsSection } from "../components/containers/Sections";
+import { ProjectsIntro, ProjectsSection } from "../components/containers/ProjectsPageContainers";
 import PageScreen from "../components/layout/PageScreen";
 
 function ProjectsPage() {

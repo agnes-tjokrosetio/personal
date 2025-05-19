@@ -1,8 +1,7 @@
 import React from "react";
 import NavigationBar from "../components/layout/NavigationBar";
 import ContactInformation from "../components/layout/ContactInformation";
-import { LandingIntro } from "../components/containers/Intros";
-import { PortfolioSelectionSection } from "../components/containers/Sections";
+import { LandingIntro, PortfolioSelectionSection } from "../components/containers/LandingPageContainers";
 import PageScreen from "../components/layout/PageScreen";
 
 function LandingPage() {

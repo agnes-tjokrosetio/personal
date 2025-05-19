@@ -39,7 +39,7 @@ export const AboutMeSections = ({ showSection, experience, skills, courses, extr
 
 const AboutNavigation = ({ showSection }) => {
   const professional = ["experience", "skills", "courses"];
-  const nonProfessional = ["activities", "interests"];
+  const nonProfessional = ["extracurricular", "interests"];
   return (
     <div className="flex flex-col md:flex-row gap-4 pb-4 justify-center">
       <div className="flex flex-row gap-4 justify-center">

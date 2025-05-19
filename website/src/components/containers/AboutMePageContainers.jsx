@@ -19,16 +19,6 @@ export const AboutMeIntro = () => (
       developing my knowledge in investing and managing money to grow with businesses on expanding operations and
       sources of funding.
     </p>
-    {/* <div className="flex justify-center md:justify-start w-full pt-2">
-        <button
-          className="w-auto max-w-max bg-[#1a1a1a] text-white hover:text-gray-500 hover:!bg-[white] hover:!border-[white] px-6 py-2 font-semibold transition duration-300"
-          onClick={() =>
-            window.open("https://agnes-tjokrosetio.github.io/personal/AT_Resume.pdf", "_blank", "noopener,noreferrer")
-          }
-        >
-          RESUME
-        </button>
-      </div> */}
   </div>
 );
 
@@ -48,16 +38,31 @@ export const AboutMeSections = ({ showSection, experience, skills, courses, extr
 };
 
 const AboutNavigation = ({ showSection }) => {
+  const professional = ["experience", "skills", "courses"];
+  const nonProfessional = ["activities", "interests"];
   return (
     <div className="flex flex-col md:flex-row gap-4 pb-4 justify-center">
-      <div className="flex flex-row gap-4 pb-4 justify-center">
-        <button onClick={() => showSection("experience")}>experience</button>
-        <button onClick={() => showSection("skills")}>skills</button>
-        <button onClick={() => showSection("courses")}>courses</button>
+      <div className="flex flex-row gap-4 justify-center">
+        {professional.map((item, index) => (
+          <button
+            key={index}
+            className="w-auto max-w-max bg-[#1a1a1a] text-white hover:text-gray-500 hover:!bg-[white] hover:!border-[white] px-6 py-2 font-semibold transition duration-300"
+            onClick={() => showSection(item)}
+          >
+            {item}
+          </button>
+        ))}
       </div>
-      <div className="flex flex-row gap-4 pb-4 justify-center">
-        <button onClick={() => showSection("extracurricular")}>activities</button>
-        <button onClick={() => showSection("sideinterests")}>interests</button>
+      <div className="flex flex-row gap-4 justify-center">
+        {nonProfessional.map((item, index) => (
+          <button
+            key={index}
+            className="w-auto max-w-max bg-[#1a1a1a] text-white hover:text-gray-500 hover:!bg-[white] hover:!border-[white] px-6 py-2 font-semibold transition duration-300"
+            onClick={() => showSection(item)}
+          >
+            {item}
+          </button>
+        ))}
       </div>
     </div>
   );

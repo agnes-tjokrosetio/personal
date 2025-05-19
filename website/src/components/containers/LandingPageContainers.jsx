@@ -48,6 +48,14 @@ export const LandingIntro = () => {
           This website has been created to to showcase my portfolio, including my projects and my activities!
         </p>
         <div className="flex flex-wrap gap-4 mt-4 md:justify-start justify-center">
+          {/* <button
+            className="w-auto max-w-max bg-[#1a1a1a] text-white hover:text-gray-500 hover:!bg-[white] hover:!border-[white] px-6 py-2 font-semibold transition duration-300"
+            onClick={() =>
+              window.open("https://agnes-tjokrosetio.github.io/personal/AT_Resume.pdf", "_blank", "noopener,noreferrer")
+            }
+          >
+            Resume
+          </button> */}
           <button
             className="bg-[#1a1a1a] text-white hover:text-gray-500 hover:!bg-[white] hover:!border-white px-6 py-2 font-semibold"
             onClick={() => navigate("/aboutme")}

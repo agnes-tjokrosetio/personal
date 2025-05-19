@@ -8,10 +8,10 @@ export const LandingIntro = () => {
   const navigate = useNavigate();
   return (
     <div className="min-h-[75vh] h-auto px-[4vw] py-[3vh] flex items-center text-[#f5f5f5] flex-col justify-center text-center px-[3vw] md:flex-row md:justify-center md:text-left">
-      <div className="bg-[#1a1a1a] m-8 w-[65%] h-auto p-4 gap-4 flex flex-col justify-center items-center rounded-[10px]">
+      <div className="bg-[#1a1a1a] w-[80%] md:w-[55%] h-auto m-8 p-4 md:p-6 flex flex-col justify-center items-center rounded-[10px]">
         <img src={profilePhoto} alt="Profile" className="w-[100%] h-auto rounded-[10px] object-cover" />
       </div>
-      <div className="flex flex-col gap-4 max-w-[800px] px-12 py-4">
+      <div className="flex flex-col gap-4 max-w-[800px] px-10 py-4">
         <p className="text-[2rem] font-extrabold text-[white]">Hi, I'm Agnes</p>
         <p className="text-[1.5rem] text-gray-300 font-medium">Commerce / Computer Science Student</p>
         <p className="text-[1rem] text-[#f0f0f0] max-w-[600px]">

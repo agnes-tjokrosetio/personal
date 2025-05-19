@@ -49,13 +49,13 @@ export const AboutMeSections = ({ showSection, experience, skills, courses, extr
 
 const AboutNavigation = ({ showSection }) => {
   return (
-    <div className="flex flex-col gap-2 pb-4 justify-center">
-      <div className="flex flex-row gap-4 pb-4 px-8 justify-center">
+    <div className="flex flex-col md:flex-row gap-4 pb-4 justify-center">
+      <div className="flex flex-row gap-4 pb-4 justify-center">
         <button onClick={() => showSection("experience")}>experience</button>
         <button onClick={() => showSection("skills")}>skills</button>
         <button onClick={() => showSection("courses")}>courses</button>
       </div>
-      <div className="flex flex-row gap-4 pb-4 px-8 justify-center">
+      <div className="flex flex-row gap-4 pb-4 justify-center">
         <button onClick={() => showSection("extracurricular")}>activities</button>
         <button onClick={() => showSection("sideinterests")}>interests</button>
       </div>

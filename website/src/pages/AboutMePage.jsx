@@ -11,14 +11,14 @@ function AboutMePage() {
   const [skills, setSkills] = React.useState(false);
   const [courses, setCourses] = React.useState(false);
   const [extracurricular, setExtracurricular] = React.useState(false);
-  const [sideinterests, setSideInterests] = React.useState(false);
+  const [interests, setInterests] = React.useState(false);
 
   const showSection = (section) => {
     setExperience(section === "experience");
     setSkills(section === "skills");
     setCourses(section === "courses");
     setExtracurricular(section === "extracurricular");
-    setSideInterests(section === "sideinterests");
+    setInterests(section === "interests");
   };
 
   return (
@@ -32,7 +32,7 @@ function AboutMePage() {
           skills={skills}
           courses={courses}
           extracurricular={extracurricular}
-          sideinterests={sideinterests}
+          interests={interests}
         />
         <ContactInformation />
       </PageScreen>

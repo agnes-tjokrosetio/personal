@@ -22,7 +22,7 @@ export const AboutMeIntro = () => (
   </div>
 );
 
-export const AboutMeSections = ({ showSection, experience, skills, courses, extracurricular, sideinterests }) => {
+export const AboutMeSections = ({ showSection, experience, skills, courses, extracurricular, interests }) => {
   return (
     <div className="flex flex-col max-w-full justify-center gap-4">
       <AboutNavigation showSection={showSection} />
@@ -31,7 +31,7 @@ export const AboutMeSections = ({ showSection, experience, skills, courses, extr
         skills={skills}
         courses={courses}
         extracurricular={extracurricular}
-        sideinterests={sideinterests}
+        interests={interests}
       />
     </div>
   );
@@ -68,7 +68,7 @@ const AboutNavigation = ({ showSection }) => {
   );
 };
 
-const ShowSections = ({ experience, skills, courses, extracurricular, sideinterests }) => {
+const ShowSections = ({ experience, skills, courses, extracurricular, interests }) => {
   const csCourses = relevantCourses.filter((course) => course.degree === "Computer Science");
   const finsCourses = relevantCourses.filter((course) => course.degree === "Finance");
 
@@ -117,8 +117,8 @@ const ShowSections = ({ experience, skills, courses, extracurricular, sideintere
           </div>
         </Section>
       )}
-      {sideinterests && (
-        <Section title="Side Interests">
+      {interests && (
+        <Section title="Interests">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             {interestAreas.map((item, index) => (
               <InterestCard key={index} item={item} />

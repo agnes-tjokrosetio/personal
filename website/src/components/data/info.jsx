@@ -160,6 +160,14 @@ export const interestAreas = [
 
 export const projects = [
   {
+    name: "UNSW Forex Association Website",
+    date: "May 20 2025 - Present",
+    description:
+      "Designing, developing and maintaining the society website for UNSW Forex Association. The website was built as a React and Vite project and uses JavaScript, HTML and CSS. The website was worked on alongside my co-director and vice president of internals.",
+    code: "https://github.com/zitianqin/Hackabyte-2025",
+    demo: "https://devpost.com/software/fatcow",
+  },
+  {
     name: "DevSov HACKaByte Hackathon",
     date: "Mar 24 2025 - Mar 26 2025",
     description:
@@ -172,8 +180,8 @@ export const projects = [
     date: "Mar 14 2025 - Mar 16 2025",
     description:
       "Traditional budgeting apps often fail to engage younger users, making financial management feel like a chore rather than an empowering tool. As part of a team, we saw a gap in the market for a budgeting app that integrates financial education, AI-driven insights, and interactive elements that resonate with Gen Z. Our goal was to create a platform that not only helps users save but also educates them about responsible financial decision-making in addition to being entertaining to increase retention rates. It utilises an AI Chatbot to provide real-time financial insights, spending analysis, and personalised recommendations; simulates risk-taking scenarios to teach users about probability, financial consequences, and responsible decision-making; encourages goal-setting with progress tracking and incentives for consistent saving; and enables users to allocate funds toward causes they care about, reinforcing financial planning with social impact.",
-    code: "https://github.com/prith82003/CannotCodeGPT",
-    demo: "https://devpost.com/software/cannotcodegpt",
+    code: "",
+    demo: "",
   },
   {
     name: "UNSW Mending Broken Hearts",

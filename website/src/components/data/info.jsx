@@ -164,8 +164,8 @@ export const projects = [
     date: "May 20 2025 - Present",
     description:
       "Designing, developing and maintaining the society website for UNSW Forex Association. The website was built as a React and Vite project and uses JavaScript, HTML and CSS. The website was worked on alongside my co-director and vice president of internals.",
-    code: "https://github.com/zitianqin/Hackabyte-2025",
-    demo: "https://devpost.com/software/fatcow",
+    code: "",
+    demo: "",
   },
   {
     name: "DevSov HACKaByte Hackathon",

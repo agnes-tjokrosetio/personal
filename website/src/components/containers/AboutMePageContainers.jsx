@@ -131,7 +131,7 @@ const ShowSections = ({ experience, skills, courses, extracurricular, interests 
 };
 
 const Section = ({ title, children }) => (
-  <div className="flex flex-col text-black bg-[#f8f8f8] gap-6 px-10 py-15 border-t border-gray-400">
+  <div className="flex flex-col text-black bg-[#f8f8f8] gap-6 px-10 py-15 border-t border-gray-400 rounded-t-[50px]">
     <p className="text-[1.5rem] text-center font-bold text-black">{title}</p>
     {children}
   </div>

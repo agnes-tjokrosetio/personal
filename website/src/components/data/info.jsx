@@ -159,23 +159,23 @@ export const projects = [
     date: "May 2025 - Present",
     stack: "React, JavaScript, HTML, Tailwind CSS",
     description:
-      "Designing, developing and maintaining the society website for UNSW Forex Association. The website was built as a React and Vite project. The website was worked on alongside my co-director and vice president of internals.",
+      "Designing, developing and maintaining the society website for UNSW Forex Association. The website was worked on alongside my co-director and vice president of internals. The website was built as a React and Vite project. ",
     code: "https://github.com/forexit2025/forexit2025.github.io",
     demo: "https://unswfxa.au/",
   },
   {
     name: "DevSov HACKaByte Hackathon",
     date: "Mar 2025",
-    stack: "TypeScript, Tailwind CSS, Prisma",
+    stack: "React Native, TypeScript, Tailwind CSS, Prisma, Express",
     description:
-      "Students nowadays are unwilling to leave their classes or study areas to get food. Businesses missing out on potential revenue from student customers. As part of a team, we built this application over 3 days to allow students to order from restaurants around campus to their specific room at uni. The application was built as a cross-platform app using Expo.",
+      "Students nowadays are unwilling to leave their classes or study areas to get food. Businesses missing out on potential revenue from student customers. Allows students to order from restaurants around campus to their specific room at uni. As part of a team, we built this application over 3 days to allow students to order from restaurants around campus to their specific room at uni. The application was built as a cross-platform app using Expo.",
     code: "https://github.com/zitianqin/Hackabyte-2025",
     demo: "https://devpost.com/software/fatcow",
   },
   {
     name: "Atlassian x UNIHACK Hackathon",
     date: "Mar 2025",
-    stack: "TypeScript, JavaScript, CSS",
+    stack: "React, TypeScript, JavaScript, CSS, NeonDB",
     description:
       "Traditional budgeting apps often fail to engage younger users, making financial management feel like a chore rather than an empowering tool. As part of a team, we saw a gap in the market for a budgeting app that integrates financial education, AI-driven insights, and interactive elements that resonate with Gen Z. Our goal was to create a platform over 3 days that not only helps users save but also educates them about responsible financial decision-making in addition to being entertaining to increase retention rates. It utilises an AI Chatbot to provide real-time financial insights, spending analysis, and personalised recommendations; simulates risk-taking scenarios to teach users about probability, financial consequences, and responsible decision-making; encourages goal-setting with progress tracking and incentives for consistent saving; and enables users to allocate funds toward causes they care about, reinforcing financial planning with social impact.",
     code: "https://github.com/prith82003/CannotCodeGPT",
@@ -193,7 +193,7 @@ export const projects = [
   {
     name: "presto",
     date: "Oct 2024 - Nov 2024",
-    stack: "TypeScript, JavaScript, CSS",
+    stack: "React, JavaScript, Tailwind CSS",
     description:
       "As part of a project for a web frontend programming course (COMP6080), my partner and I created an alternative to slides.com that is a lean, lightweight app called Presto. The application was completed in React.js and adhered to a set of requirements: login & presentation creation (landing, login and register pages + logout actions), setting up slides (dashboard page, presentation controls ie. creating and deleting presentation and slides, listing presentations, editing), putting elements on a slide (code, images, videos, text, movable and resizeable elements), and other features (revision history, url updating, slide transitioning).",
     code: "",

@@ -109,7 +109,7 @@ const ShowSections = ({ experience, skills, courses, extracurricular, interests 
         </Section>
       )}
       {extracurricular && (
-        <Section title="Leadership, Activities and Volunteering">
+        <Section title="Extracurricular">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {volunteeringActivities.map((item, index) => (
               <ActivitiesCard key={index} item={item} />

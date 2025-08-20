@@ -14,12 +14,13 @@ export const ProjectsIntro = () => (
 export const ProjectsSection = () => (
   <div className="flex flex-col gap-6 px-[5vw]">
     {projects.map((project, index) => (
-      <div key={index} className="bg-white rounded-2xl p-6 flex flex-col gap-3">
+      <div key={index} className="bg-white rounded-2xl p-6 flex flex-col gap-3 border-l-8 border-teal-600">
+        <p className="text-xl font-bold text-gray-900">{project.name}</p>
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
-          <p className="text-xl font-bold text-gray-900">{project.name}</p>
-          <span className="text-sm text-gray-500">Project Timeline: {project.date}</span>
+          <p className="text-sm font-bold text-gray-500">{project.stack}</p>
+          <span className="text-sm font-bold text-gray-500">{project.date}</span>
         </div>
-        <p className="text-sm text-gray-700">{project.description}</p>
+        <p className="text-sm text-gray-800">{project.description}</p>
         <div className="flex gap-4 mt-2 flex-wrap">
           {project.code && (
             <button

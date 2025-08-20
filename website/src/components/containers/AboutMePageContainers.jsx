@@ -70,7 +70,7 @@ const AboutNavigation = ({ showSection }) => {
 
 const ShowSections = ({ experience, skills, courses, extracurricular, interests }) => {
   const csCourses = relevantCourses.filter((course) => course.degree === "Computer Science");
-  const finsCourses = relevantCourses.filter((course) => course.degree === "Finance");
+  const finsCourses = relevantCourses.filter((course) => course.degree === "Commerce (Finance)");
 
   return (
     <>
@@ -100,7 +100,7 @@ const ShowSections = ({ experience, skills, courses, extracurricular, interests 
               <CourseCard key={index} course={course} category="Computer Science" />
             ))}
           </div>
-          <h2 className="text-[1.25rem] font-semibold mt-6">Finance</h2>
+          <h2 className="text-[1.25rem] font-semibold mt-6">Commerce (Finance)</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {finsCourses.map((course, index) => (
               <CourseCard key={index} course={course} category="Finance" />
@@ -138,14 +138,16 @@ const Section = ({ title, children }) => (
 );
 
 const ExperienceCard = ({ item }) => (
-  <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 p-6 flex flex-col gap-2">
+  <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 p-6 flex flex-col gap-2 border-l-8 border-gray-300">
     <div className="flex items-center gap-4">
       <div className="bg-gray-100 rounded-full w-12 h-12 flex items-center justify-center">
         <i className="fa fa-briefcase text-gray-500 text-lg" />
       </div>
       <div>
         <h3 className="text-md font-bold text-gray-900">{item.title}</h3>
-        <p className="text-sm text-gray-500">{item.company}</p>
+        <p className="text-sm text-gray-500">
+          {item.company} - {item.location}
+        </p>
       </div>
     </div>
     <div className="flex items-center gap-2 text-sm text-gray-500 mt-2">
@@ -169,11 +171,14 @@ const ExperienceCard = ({ item }) => (
 );
 
 const SkillCard = ({ skill }) => (
-  <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 p-6 flex flex-col gap-4">
+  <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 p-6 flex flex-col gap-4 border-l-8 border-blue-300">
     <h3 className="text-lg font-bold text-gray-900">{skill.type}</h3>
     <div className="flex flex-wrap gap-2">
       {skill.details.map((item, i) => (
-        <span key={i} className="bg-gray-100 text-gray-700 text-sm px-4 py-2 rounded-full">
+        <span
+          key={i}
+          className="bg-gray-100 text-gray-700 text-sm px-4 py-2 rounded-full hover:shadow-lg transition-shadow duration-300"
+        >
           {item}
         </span>
       ))}
@@ -182,7 +187,7 @@ const SkillCard = ({ skill }) => (
 );
 
 const CourseCard = ({ course, category }) => (
-  <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 p-6 flex flex-col gap-1">
+  <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 p-6 flex flex-col gap-1 border-l-8 border-green-300">
     <div className="flex items-center gap-3">
       <div className="bg-gray-100 rounded-full w-12 h-12 flex items-center justify-center">
         <i className={`fa ${category === "Computer Science" ? "fa-code" : "fa-line-chart"} text-lg`} />
@@ -197,7 +202,7 @@ const CourseCard = ({ course, category }) => (
 );
 
 const ActivitiesCard = ({ item }) => (
-  <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 p-6 flex flex-col gap-2">
+  <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 p-6 flex flex-col gap-2 border-l-8 border-red-300">
     <div className="flex items-center gap-4">
       <div className="bg-gray-100 rounded-full w-12 h-12 flex items-center justify-center">
         <i className="fa fa-users text-gray-500 text-lg" />
@@ -218,7 +223,7 @@ const ActivitiesCard = ({ item }) => (
 );
 
 const InterestCard = ({ item }) => (
-  <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 p-6 flex flex-row items-center gap-4">
+  <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 p-6 flex flex-row items-center gap-4 border-l-8 border-purple-300">
     <div className="bg-gray-100 rounded-full w-12 h-12 flex items-center justify-center">
       <i className={`fa ${item.icon} text-gray-500 text-lg`} />
     </div>

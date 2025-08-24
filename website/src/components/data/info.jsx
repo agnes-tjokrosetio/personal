@@ -189,7 +189,7 @@ export const projects = [
     date: "Feb 2025 - Present",
     stack: "TypeScript, JavaScript, CSS, Firebase",
     description:
-      "UNSW Mending Broken Hearts is a student led engineering project developing a total artificial heart prototype in collaboration with UNSW academic researchers. As a Software Engineer in the Software Team, I contributed to the design and development of a patient mobile application to support heart monitoring and health management. I also contributed to designing the clinician website and desktop application for real time access to patient data. Our team also closely collaborate with the Control Systems team to integrate sensors into the application backend.",
+      "UNSW Mending Broken Hearts is a student led engineering project developing a total artificial heart prototype in collaboration with UNSW academic researchers. As a Software Engineer in the Software Team, I contributed to the design and development of a patient mobile application to support heart monitoring and health management. I also contributed to designing the clinician website and desktop application for real time access to patient data. Our team also closely collaborate with the Control Systems team to integrate sensors into the application backend. We also worked on optimising maintainability by user version control via Git and component design.",
     code: "",
     demo: "",
     ongoing: true,
@@ -199,7 +199,7 @@ export const projects = [
     date: "Oct 2024 - Nov 2024",
     stack: "React, JavaScript, Tailwind CSS",
     description:
-      "As part of a project for a web frontend programming course (COMP6080), I developed a web-based presentation platform in React.js with a teammate, replicating the functionality of slides.com. We implemented user authentication (login, register, logout) and a dashboard for managing presentations and slides. We built an interactive slide editor supporting test, images, videos, code and resizeable components. We also built other advanced features such as revision history, URL updating and slide transitions.",
+      "As part of a project for a web frontend programming course (COMP6080), I developed a web-based presentation platform in React.js with a teammate, replicating the functionality of slides.com. We implemented user authentication (login, register, logout) and a dashboard for managing presentations and slides. We built an interactive slide editor supporting test, images, videos, code and resizeable components. We also built other advanced features such as revision history, URL updating and slide transitions. Version control was enforced via Git and component design.",
     code: "",
     demo: "https://youtu.be/67hhplATrN0",
     ongoing: false,
@@ -209,7 +209,7 @@ export const projects = [
     date: "Jan 2024 - Present",
     stack: "React, JavaScript, HTML, Tailwind CSS",
     description:
-      "This website started out as a way for me to collect all my projects into a portfolio and also learn more about the frontend programming languages HTML, CSS, JavaScript. Overtime, I've continued to work on building this website using those same languages. Additionally, after taking frontend related courses, I have also applied my knowledge about React and Vite (setting up the website as a React project using Vite) to enhance the site by design and usability. This website was published in January 2025 and is an ongoing project.",
+      "This website started out as a way for me to collect all my projects into a portfolio and also learn more about the frontend programming languages HTML, CSS, JavaScript. Overtime, I've continued to work on building this website using those same languages. Additionally, after taking frontend related courses, I have also applied my knowledge about React and Vite (setting up the website as a React project using Vite) to enhance the site by design and usability. This website was published in January 2025 and is an ongoing project. I am also working on maintainability by version control via Git.",
     code: "https://github.com/agnes-tjokrosetio/personal",
     demo: "",
     ongoing: true,

@@ -3,8 +3,8 @@ import { projects } from "../data/info";
 export const ProjectsIntro = () => (
   <div className="flex flex-col text-white gap-4 py-[8vh] px-[10vw] md:px-[5vw] text-center">
     <p className="text-[2rem] font-bold text-white">Projects</p>
-    <p className="text-[1rem] text-white">
-      This page is a collection of the projects I have already comeplted and am currently in progress completing. Links
+    <p className="text-[1rem] text-white px-[5vw]">
+      This page is a collection of the projects I have already completed and am currently in progress completing. Links
       are provided for the source code where possible (source code for works completed through UNSW courses are not
       provided due to plagiarism and intellectual property concerns). Links for demo recordings are also provided where
       possible.
@@ -17,7 +17,7 @@ export const ProjectsSection = () => (
     {projects.map((project, index) => (
       <div
         key={index}
-        className="bg-white rounded-2xl p-6 flex flex-col gap-3 border-l-8 border-teal-600 hover:scale-105 transform transition-transform"
+        className="bg-white rounded-2xl p-6 flex flex-col gap-3 border-l-8 border-teal-600 hover:scale-102 transform transition-transform"
       >
         <p className="text-xl font-bold text-gray-900">{project.name}</p>
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">

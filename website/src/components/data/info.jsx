@@ -14,7 +14,7 @@ export const workExperience = [
     location: "Sydney, NSW",
     date: "May 2024 - Present",
     description:
-      "As part of the Engineering Social Study Hub, provide peer tutoring and support to first year students required to take mathematics courses (e.g. Mathematics 1A, Mathematics 1B, Discrete Mathematics). Involved in creating a study hub with a comfortable and supportive environment where first year students can seek guidance, and work with fellow students.",
+      "As part of the Engineering Social Study Hub, provide peer tutoring and support to first year students required to take mathematics courses (e.g. Mathematics 1A, Mathematics 1B, Discrete Mathematics). Contributed to creating the study hub environment with a comfortable and supportive environment where first year students can seek guidance, and work with fellow students.",
   },
   {
     title: "Mathematics Tutor / Marker",

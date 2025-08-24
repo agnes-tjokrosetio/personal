@@ -159,7 +159,7 @@ export const projects = [
     date: "May 2025 - Present",
     stack: "React, JavaScript, HTML, Tailwind CSS",
     description:
-      "Designing, developing and maintaining the society website for UNSW Forex Association. The website was worked on alongside my co-director and vice president of internals. The website was built as a React and Vite project. ",
+      "Designing, developing and maintaining the society website for UNSW Forex Association. Collaborated closely with my co-director and the VP of internals to align the website feature with society goals and events. Implemented features including responsiveness, event listings and member resources to improve engagement. Optimising maintainability by user version control via Git and component design. The website was built as a React and Vite project. ",
     code: "https://github.com/forexit2025/forexit2025.github.io",
     demo: "https://unswfxa.au/",
   },

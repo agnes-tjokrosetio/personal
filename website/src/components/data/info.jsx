@@ -6,7 +6,7 @@ export const workExperience = [
     date: "Sep 2024 - Present",
     details: ["Computer Systems Fundamentals (COMP1521) Tutor & Lab Assistant", "Exam Invigilator"],
     description:
-      "Tutoring and lab assisting multiple classes in the course Computer Systems Fundamentals (COMP1521). Conducted labs to guide other students in understanding the course content, facilitating help sessions and assisting on online forums. Performed marking of students’ assignments and exams and invigilated examinations.",
+      "Tutoring and lab assisting multiple classes (of ~20 students) in the course Computer Systems Fundamentals (COMP1521). Facilitating labs, help sessions and online forums to support student learning and problem solving. Assessed student performance by marking assignments and exams and exam invigilating numerous course examinations.",
   },
   {
     title: "Student Mentor",
@@ -14,7 +14,7 @@ export const workExperience = [
     location: "Sydney, NSW",
     date: "May 2024 - Present",
     description:
-      "As part of the Engineering Social Study Hub, provide peer tutoring and support to first year students required to take mathematics courses (e.g. Mathematics 1A, Mathematics 1B, Discrete Mathematics). Contributed to creating the study hub environment with a comfortable and supportive environment where first year students can seek guidance, and work with fellow students.",
+      "As part of the Engineering Social Study Hub, provided peer tutoring and support to first year students in first year mathematics courses (Mathematics 1A, Mathematics 1B, and Discrete Mathematics). Contributed to the study hub environment by fostering collaboration, guidance and peer-to-peer learning to help students transition to university level course work.",
   },
   {
     title: "Mathematics Tutor / Marker",
@@ -22,7 +22,7 @@ export const workExperience = [
     location: "Sydney, NSW",
     date: "Feb 2023 - Apr 2025",
     description:
-      "Responsible for tutoring numerous senior high school students in Mathematics courses (Advanced, Extension 1 and Extension 2 Mathematics). Taught with clarity and patience by guiding students through assigned weekly homework and conducting weekly quiz supervision and quiz explanations. Also marked weekly homework and quizzes conducted at the centre.",
+      "Tutoring senior high school students in Mathematics curriculum (Mathematics Advanced, Extension 1 and Extension 2). Teaching with clarity and patience, guiding students through weekly homework, quizzes and school questions. Assessed student progress by marking weekly quizzes and homework across Year 9 to 12 students.",
   },
   {
     title: "Tutor",
@@ -102,14 +102,14 @@ export const volunteeringActivities = [
     society: "UNSW Forex Association",
     date: "Apr 2025 - Present",
     description:
-      "Responsible for design, building and maintaining UNSW FXA's website alongside my co-director as well as developing and optimising internal tools to streamline team workflows and collaboration. We were also responsible for leading and managing a team of subcommittee to facilitate growth and skill development whilst enhancing communication channels to improve member engagement. We also organised team building activities and events for the portfolio team.",
+      "Designed, built and maintained the UNSW FXA website with a co-director, working on ensuring usability and reach. Developed and optimised internal tools to streamline workflows, collaboration and improve member engagement. Leading a team of subcommittee members alongside my co-director to facilitate growth and skill development and enhancing member engagement through portfolio events and activities.",
   },
   {
     title: "IT Director",
     society: "UNSW Financial Technology Society",
     date: "Nov 2024 - Present",
     description:
-      "Maintaining operation functionality of the society through managing various IT platforms (including the society website, communication channels, emails and cloud drive). My co-directors and I were also responsible for leading and managing a team of subcommittee to oversee the technical maintenance of the society and handle the marking for the annual Algothon competition. We also organised team building activities and events for the portfolio team.",
+      "Maintaining operation functionality of the society through managing various IT platforms (including the society website, communication channels, emails and cloud drive). My co-directors and I were also responsible for leading and managing a team of subcommittee members to oversee the technical maintenance of the society and handle the marking for the annual Algothon competition. We also organised team building activities and events for the portfolio team.",
   },
   {
     title: "General Vollie",
@@ -123,7 +123,7 @@ export const volunteeringActivities = [
     society: "UNSW Computer Science and Engineering Society",
     date: "Jan 2024 - Apr 2024",
     description:
-      "As part of the Peer Mentoring Team, we aimed to make incoming CSE students feel more supported, form friendships with other students, and get more involved in the CSE society. As part of a group (8 mentees), my co-mentor and I provided information, support and friendliness, networking opportunities, and early professional development for mentees",
+      "As part of the Peer Mentoring Team for CSESoc, we aimed to make incoming CSE students feel more supported, form friendships with other students, and get more involved in the CSE society. As part of a group (8 mentees), my co-mentor and I provided information, support and friendliness, networking opportunities, and early professional development for mentees",
   },
   {
     title: "Marketing Subcommitee",
@@ -162,6 +162,7 @@ export const projects = [
       "Designing, developing and maintaining the society website for UNSW Forex Association. Collaborated closely with my co-director and the VP of internals to align the website feature with society goals and events. Implemented features including responsiveness, event listings and member resources to improve engagement. Optimising maintainability by user version control via Git and component design. The website was built as a React and Vite project. ",
     code: "https://github.com/forexit2025/forexit2025.github.io",
     demo: "https://unswfxa.au/",
+    ongoing: true,
   },
   {
     name: "DevSov HACKaByte Hackathon",
@@ -171,6 +172,7 @@ export const projects = [
       "Students nowadays are unwilling to leave their classes or study areas to get food. Businesses missing out on potential revenue from student customers. Allows students to order from restaurants around campus to their specific room at uni. As part of a team, we built this application over 3 days to allow students to order from restaurants around campus to their specific room at uni. The application was built as a cross-platform app using Expo.",
     code: "https://github.com/zitianqin/Hackabyte-2025",
     demo: "https://devpost.com/software/fatcow",
+    ongoing: false,
   },
   {
     name: "Atlassian x UNIHACK Hackathon",
@@ -180,24 +182,27 @@ export const projects = [
       "Traditional budgeting apps often fail to engage younger users, making financial management feel like a chore rather than an empowering tool. As part of a team, we saw a gap in the market for a budgeting app that integrates financial education, AI-driven insights, and interactive elements that resonate with Gen Z. Our goal was to create a platform over 3 days that not only helps users save but also educates them about responsible financial decision-making in addition to being entertaining to increase retention rates. It utilises an AI Chatbot to provide real-time financial insights, spending analysis, and personalised recommendations; simulates risk-taking scenarios to teach users about probability, financial consequences, and responsible decision-making; encourages goal-setting with progress tracking and incentives for consistent saving; and enables users to allocate funds toward causes they care about, reinforcing financial planning with social impact.",
     code: "https://github.com/prith82003/CannotCodeGPT",
     demo: "https://devpost.com/software/cannotcodegpt",
+    ongoing: false,
   },
   {
     name: "UNSW Mending Broken Hearts",
     date: "Feb 2025 - Present",
     stack: "TypeScript, JavaScript, CSS, Firebase",
     description:
-      "UNSW Mending Broken Hearts is a student led project involving a hands on experience where we design and build a total artificial heart prototype (owned by UNSW) in collaboration with academic researchers. As a VIP Student, I was able to work as a Software Engineer as part of the Software Team. My main responsibilities involved designing and refining the patient app accompanying the total artificial heart and building the website and desktop app for clinician access. I was also collaborating with other teams (mainly the Systems team) in working to integrate sensors and Bluetooth into the app backend.",
+      "UNSW Mending Broken Hearts is a student led engineering project developing a total artificial heart prototype in collaboration with UNSW academic researchers. As a Software Engineer in the Software Team, I contributed to the design and development of a patient mobile application to support heart monitoring and health management. I also contributed to designing the clinician website and desktop application for real time access to patient data. Our team also closely collaborate with the Control Systems team to integrate sensors into the application backend.",
     code: "",
     demo: "",
+    ongoing: true,
   },
   {
     name: "presto",
     date: "Oct 2024 - Nov 2024",
     stack: "React, JavaScript, Tailwind CSS",
     description:
-      "As part of a project for a web frontend programming course (COMP6080), my partner and I created an alternative to slides.com that is a lean, lightweight app called Presto. The application was completed in React.js and adhered to a set of requirements: login & presentation creation (landing, login and register pages + logout actions), setting up slides (dashboard page, presentation controls ie. creating and deleting presentation and slides, listing presentations, editing), putting elements on a slide (code, images, videos, text, movable and resizeable elements), and other features (revision history, url updating, slide transitioning).",
+      "As part of a project for a web frontend programming course (COMP6080), I developed a web-based presentation platform in React.js with a teammate, replicating the functionality of slides.com. We implemented user authentication (login, register, logout) and a dashboard for managing presentations and slides. We built an interactive slide editor supporting test, images, videos, code and resizeable components. We also built other advanced features such as revision history, URL updating and slide transitions.",
     code: "",
     demo: "https://youtu.be/67hhplATrN0",
+    ongoing: false,
   },
   {
     name: "this website!",
@@ -207,5 +212,6 @@ export const projects = [
       "This website started out as a way for me to collect all my projects into a portfolio and also learn more about the frontend programming languages HTML, CSS, JavaScript. Overtime, I've continued to work on building this website using those same languages. Additionally, after taking frontend related courses, I have also applied my knowledge about React and Vite (setting up the website as a React project using Vite) to enhance the site by design and usability. This website was published in January 2025 and is an ongoing project.",
     code: "https://github.com/agnes-tjokrosetio/personal",
     demo: "",
+    ongoing: true,
   },
 ];

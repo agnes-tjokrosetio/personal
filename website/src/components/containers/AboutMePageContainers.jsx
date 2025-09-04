@@ -5,19 +5,23 @@ export const AboutMeIntro = () => (
     <p className="text-[2rem] font-bold text-white">About Me</p>
     <p className="text-[1rem] text-white">
       I'm Agnes and I am currently a 3rd year UNSW student studying a Bachelor of Computer Science / Commerce, majoring
-      in Computer Science and Finance.
+      in Computer Science and Finance. I hope to utilise my hands-on experience in frontend and backend software
+      engineering, to build efficient, scalable and customer first solutions. As such, I am seeking opportunities in a
+      software engineering (technology) intern role.
     </p>
     <p className="text-[1rem] text-white">
-      In terms of the pathways in Computer Science, I have a strong interest in software product development, software
-      engineering and frontend developing and engineering. As for Finance, I also have a strong interest in areas of
-      investment banking, private equity and real estate.
+      I am currently more interested in the pathways in Computer Science, with a strong interest in software product
+      development, software engineering and frontend developing and engineering. As for Finance, I also have a strong
+      interest in areas of investment banking, private equity and real estate.
     </p>
     <p className="text-[1rem] text-white">
-      I am known for being an enthusiastic learner and with a bubbly and empathetic nature. I am looking for
-      opportunities to creating intuitive and engaging user experiences by using my technical skills and further develop
-      my understanding of design and programming by learning from industry professionals. I am also keen on further
-      developing my knowledge in investing and managing money to grow with businesses on expanding operations and
-      sources of funding.
+      I am known for being an enthusiastic learner and with a bubbly and empathetic nature. From my experiences at work
+      and at university, I discovered my passion for building and delivering technical solutions that have a positive
+      impact on the community. In particular, I am excited about solving complex problems by incorporating software
+      principles and user focused design. As such, I’m excited to continue my journey by taking on opportunities to
+      creating intuitive and engaging user experiences by using my technical skills and further develop my understanding
+      of design and programming by learning from industry professionals. I am also keen on further developing my
+      knowledge in investing and managing money to grow with businesses on expanding operations and sources of funding.
     </p>
   </div>
 );
@@ -138,7 +142,7 @@ const Section = ({ title, children }) => (
 );
 
 const ExperienceCard = ({ item }) => (
-  <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 p-6 flex flex-col gap-2 border-l-8 border-gray-300">
+  <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 hover:scale-102 transform transition-transform p-6 flex flex-col gap-2 border-l-8 border-gray-300">
     <div className="flex items-center gap-4">
       <div className="bg-gray-100 rounded-full w-12 h-12 flex items-center justify-center">
         <i className="fa fa-briefcase text-gray-500 text-lg" />
@@ -171,13 +175,13 @@ const ExperienceCard = ({ item }) => (
 );
 
 const SkillCard = ({ skill }) => (
-  <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 p-6 flex flex-col gap-4 border-l-8 border-blue-300">
+  <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 hover:scale-102 transform transition-transform p-6 flex flex-col gap-4 border-l-8 border-blue-300">
     <h3 className="text-lg font-bold text-gray-900">{skill.type}</h3>
     <div className="flex flex-wrap gap-2">
       {skill.details.map((item, i) => (
         <span
           key={i}
-          className="bg-gray-100 text-gray-700 text-sm px-4 py-2 rounded-full hover:shadow-lg transition-shadow duration-300"
+          className="bg-gray-100 text-gray-700 hover:text-blue-700 text-sm px-4 py-2 rounded-full hover:shadow-lg transition-shadow duration-300"
         >
           {item}
         </span>
@@ -187,7 +191,7 @@ const SkillCard = ({ skill }) => (
 );
 
 const CourseCard = ({ course, category }) => (
-  <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 p-6 flex flex-col gap-1 border-l-8 border-green-300">
+  <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 hover:scale-102 transform transition-transform p-6 flex flex-col gap-1 border-l-8 border-green-300">
     <div className="flex items-center gap-3">
       <div className="bg-gray-100 rounded-full w-12 h-12 flex items-center justify-center">
         <i className={`fa ${category === "Computer Science" ? "fa-code" : "fa-line-chart"} text-lg`} />
@@ -195,14 +199,14 @@ const CourseCard = ({ course, category }) => (
       <h3 className="text-md font-bold text-gray-900">{category}</h3>
     </div>
     <p className="text-sm text-gray-700 mt-2">{course.course}</p>
-    <span className="bg-green-100 text-black text-xs font-semibold w-fit px-4 py-2 rounded-full mt-2">
+    <span className="bg-green-100 hover:text-green-900 text-black text-xs font-semibold w-fit px-4 py-2 rounded-full mt-2">
       {course.mark}
     </span>
   </div>
 );
 
 const ActivitiesCard = ({ item }) => (
-  <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 p-6 flex flex-col gap-2 border-l-8 border-red-300">
+  <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 hover:scale-102 transform transition-transform p-6 flex flex-col gap-2 border-l-8 border-red-300">
     <div className="flex items-center gap-4">
       <div className="bg-gray-100 rounded-full w-12 h-12 flex items-center justify-center">
         <i className="fa fa-users text-gray-500 text-lg" />
@@ -223,7 +227,7 @@ const ActivitiesCard = ({ item }) => (
 );
 
 const InterestCard = ({ item }) => (
-  <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 p-6 flex flex-row items-center gap-4 border-l-8 border-purple-300">
+  <div className="bg-white rounded-2xl shadow-md hover:shadow-lg hover:font-semibold transition-shadow duration-300 hover:scale-102 transform transition-transform p-6 flex flex-row items-center gap-4 border-l-8 border-purple-300">
     <div className="bg-gray-100 rounded-full w-12 h-12 flex items-center justify-center">
       <i className={`fa ${item.icon} text-gray-500 text-lg`} />
     </div>

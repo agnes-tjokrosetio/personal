@@ -94,6 +94,16 @@ export const relevantCourses = [
     course: "Capital Markets and Institutions (FINS2618)",
     mark: "82 DN",
   },
+  {
+    degree: "Commerce (Finance)",
+    course: "Social Entrepreneur Practicum (COMM3030)",
+    mark: "85 HD",
+  },
+  {
+    degree: "Commerce (Finance)",
+    course: "Toolkit for Finance (FINS3646)",
+    mark: "86 HD",
+  },
 ];
 
 export const volunteeringActivities = [

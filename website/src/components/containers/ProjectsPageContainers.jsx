@@ -12,38 +12,56 @@ export const ProjectsIntro = () => (
   </div>
 );
 
-export const ProjectsSection = () => (
-  <div className="flex flex-col gap-6 px-[5vw]">
-    {projects.map((project, index) => (
-      <div
-        key={index}
-        className="bg-white rounded-2xl p-6 flex flex-col gap-3 border-l-8 border-teal-600 hover:scale-102 transform transition-transform"
-      >
-        <p className="text-xl font-bold text-gray-900">{project.name}</p>
-        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
-          <p className="text-sm font-bold text-gray-500">{project.stack}</p>
-          <span className="text-sm font-bold text-gray-500">{project.date}</span>
-        </div>
-        <p className="text-sm text-gray-800">{project.description}</p>
-        <div className="flex gap-4 mt-2 flex-wrap">
-          {project.code && (
-            <button
-              onClick={() => window.open(project.code, "_blank", "noopener,noreferrer")}
-              className="bg-black text-white !text-sm px-4 py-2 rounded hover:text-gray-500 hover:!bg-[white] hover:!border-[black]"
-            >
-              View Code
-            </button>
-          )}
-          {project.demo && (
-            <button
-              onClick={() => window.open(project.demo, "_blank", "noopener,noreferrer")}
-              className="bg-black text-white !text-sm px-4 py-2 rounded bg-[#1a1a1a] text-white hover:text-gray-500 hover:!bg-[white] hover:!border-[black]"
-            >
-              View Demo
-            </button>
-          )}
-        </div>
-      </div>
-    ))}
+const Project = ({ project }) => (
+  <div className="bg-white rounded-2xl p-6 flex flex-col gap-3 border-l-8 border-teal-600 hover:scale-102 transform transition-transform">
+    <p className="text-xl font-bold text-gray-900">{project.name}</p>
+    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
+      <p className="text-sm font-bold text-gray-500">{project.stack}</p>
+      <span className="text-sm font-bold text-gray-500">{project.date}</span>
+    </div>
+    <p className="text-sm text-gray-800">{project.description}</p>
+    <div className="flex gap-4 mt-2 flex-wrap">
+      {project.code && (
+        <button
+          onClick={() => window.open(project.code, "_blank", "noopener,noreferrer")}
+          className="bg-black text-white !text-sm px-4 py-2 rounded hover:text-gray-500 hover:!bg-[white] hover:!border-[black]"
+        >
+          View Code
+        </button>
+      )}
+      {project.demo && (
+        <button
+          onClick={() => window.open(project.demo, "_blank", "noopener,noreferrer")}
+          className="bg-black text-white !text-sm px-4 py-2 rounded bg-[#1a1a1a] text-white hover:text-gray-500 hover:!bg-[white] hover:!border-[black]"
+        >
+          View Demo
+        </button>
+      )}
+    </div>
   </div>
 );
+
+export const ProjectsSection = () => {
+  const ongoing = projects.filter((p) => p.ongoing === true);
+  const past = projects.filter((p) => p.ongoing === false);
+  return (
+    <div className="flex flex-col gap-6 px-[5vw]">
+      <div className="flex flex-col gap-6">
+        <h3 className="flex flex-col px-[1vw] text-xl font-bold text-white">Ongoing</h3>
+        <div className="flex flex-col px-[1vw] gap-6 h-[60vh] overflow-auto">
+          {ongoing.map((project, index) => (
+            <Project key={index} project={project} />
+          ))}
+        </div>
+      </div>
+      <div className="flex flex-col gap-6">
+        <h3 className="flex flex-col px-[1vw] text-xl font-bold text-white">Past</h3>
+        <div className="flex flex-col px-[1vw] gap-6 h-[60vh] overflow-auto">
+          {past.map((project, index) => (
+            <Project key={index} project={project} />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};

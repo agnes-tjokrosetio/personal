@@ -45,18 +45,18 @@ export const ProjectsSection = () => {
   const ongoing = projects.filter((p) => p.ongoing === true);
   const past = projects.filter((p) => p.ongoing === false);
   return (
-    <div className="flex flex-col gap-6 px-[5vw]">
-      <div className="flex flex-col gap-6">
-        <h3 className="flex flex-col px-[1vw] text-xl font-bold text-white">Ongoing</h3>
-        <div className="flex flex-col px-[1vw] gap-6 h-[60vh] overflow-auto">
+    <div className="grid grid-cols-2 gap-6 px-[5vw]">
+      <div className="flex flex-col gap-4">
+        <h3 className="flex justify-center px-[1vw] text-xl font-bold text-white">Ongoing</h3>
+        <div className="flex flex-col p-[1vw] gap-6 h-[60vh] overflow-auto">
           {ongoing.map((project, index) => (
             <Project key={index} project={project} />
           ))}
         </div>
       </div>
-      <div className="flex flex-col gap-6">
-        <h3 className="flex flex-col px-[1vw] text-xl font-bold text-white">Past</h3>
-        <div className="flex flex-col px-[1vw] gap-6 h-[60vh] overflow-auto">
+      <div className="flex flex-col gap-4">
+        <h3 className="flex justify-center px-[1vw] text-xl font-bold text-white">Past</h3>
+        <div className="flex flex-col p-[1vw] gap-6 h-[60vh] overflow-auto">
           {past.map((project, index) => (
             <Project key={index} project={project} />
           ))}

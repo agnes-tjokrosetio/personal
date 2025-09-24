@@ -45,7 +45,7 @@ export const ProjectsSection = () => {
   const ongoing = projects.filter((p) => p.ongoing === true);
   const past = projects.filter((p) => p.ongoing === false);
   return (
-    <div className="grid grid-cols-2 gap-6 px-[5vw]">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-6 px-[5vw]">
       <div className="flex flex-col gap-4">
         <h3 className="flex justify-center px-[1vw] text-xl font-bold text-white">Ongoing</h3>
         <div className="flex flex-col p-[1vw] gap-6 h-[60vh] overflow-auto">

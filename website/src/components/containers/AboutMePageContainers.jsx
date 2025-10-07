@@ -7,7 +7,7 @@ export const AboutMeIntro = () => (
       I'm Agnes and I am currently a 3rd year UNSW student studying a Bachelor of Computer Science / Commerce, majoring
       in Computer Science and Finance. I hope to utilise my hands-on experience in frontend and backend software
       engineering, to build efficient, scalable and customer first solutions. As such, I am seeking opportunities in a
-      software engineering (technology) intern role.
+      software engineering (technology) intern role (in frontend, backend or full stack).
     </p>
     <p className="text-[1rem] text-white">
       I am currently more interested in the pathways in Computer Science, with a strong interest in software product

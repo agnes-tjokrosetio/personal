@@ -11,8 +11,8 @@ export const AboutMeIntro = () => (
     </p>
     <p className="text-[1rem] text-white">
       I am currently more interested in the pathways in Computer Science, with a strong interest in software product
-      development, software engineering and frontend developing and engineering. As for Finance, I also have a strong
-      interest in areas of investment banking, private equity and real estate.
+      development and software engineering (in frontend or full stack). As for Finance, I also have a strong interest in
+      areas of investment banking, private equity and real estate.
     </p>
     <p className="text-[1rem] text-white">
       I am known for being an enthusiastic learner and with a bubbly and empathetic nature. From my experiences at work

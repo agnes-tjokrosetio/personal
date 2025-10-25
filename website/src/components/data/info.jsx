@@ -37,7 +37,7 @@ export const workExperience = [
 export const relevantSkills = [
   {
     type: "Programming Languages",
-    details: ["C", "MIPS Assembly", "SQL", "Java", "R", "JavaScript", "TypeScript", "HTML", "CSS"],
+    details: ["C", "MIPS Assembly", "Java", "SQL", "Python", "Rust", "JavaScript", "TypeScript", "HTML", "CSS"],
   },
   {
     type: "Databases",
@@ -49,11 +49,11 @@ export const relevantSkills = [
   },
   {
     type: "Frameworks and Libraries",
-    details: ["React.JS", "React Native", "shadcn/ui", "Material-UI", "Tailwind CSS"],
+    details: ["React.JS", "React Native", "Expo", "Vite", "shadcn/ui", "Material-UI", "Tailwind CSS"],
   },
   {
-    type: "Platforms",
-    details: ["GitLab/GitHub", "Maple", "VSCode", "RStudio", "Framer", "Figma", "PyCharm"],
+    type: "Tools / Environments",
+    details: ["GitLab/GitHub", "Figma", "VSCode", "RStudio", "PyCharm", "Framer"],
   },
   {
     type: "General",
@@ -63,7 +63,8 @@ export const relevantSkills = [
       "Time Management",
       "Communication",
       "Problem Solving",
-      "Teaching/Mentoring",
+      "Leadership",
+      "Adaptability",
     ],
   },
 ];

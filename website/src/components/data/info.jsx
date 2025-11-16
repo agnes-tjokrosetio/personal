@@ -109,6 +109,12 @@ export const relevantCourses = [
 
 export const volunteeringActivities = [
   {
+    title: "Vice President Technicals",
+    society: "UNSW Forex Association",
+    date: "Nov 2025 - Present",
+    description: "",
+  },
+  {
     title: "IT Director",
     society: "UNSW Forex Association",
     date: "Apr 2025 - Present",

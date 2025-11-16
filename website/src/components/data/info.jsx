@@ -6,7 +6,7 @@ export const workExperience = [
     date: "Sep 2024 - Present",
     details: ["Computer Systems Fundamentals (COMP1521) Tutor & Lab Assistant", "Exam Invigilator"],
     description:
-      "Tutoring and lab assisting multiple classes (of ~20 students) in the course Computer Systems Fundamentals (COMP1521). Facilitating labs, help sessions and online forums to support student learning and problem solving. Assessed student performance by marking assignments and exams and exam invigilating numerous course examinations.",
+      "TutorING and lab assisting multiple classes (of ~20 students) in the course Computer Systems Fundamentals (COMP1521). Facilitating labs, help sessions and online forums to support student learning and problem solving. Assessed student performance by marking assignments and exams and exam invigilating numerous course examinations.",
   },
   {
     title: "Student Mentor",

@@ -77,6 +77,16 @@ export const relevantCourses = [
   },
   {
     degree: "Computer Science",
+    course: "Solving Modern Programming Problems with Rust (COMP6991)",
+    mark: "91 HD",
+  },
+  {
+    degree: "Computer Science",
+    course: "Engineering Vertically Integrated Project (ENGG3600)",
+    mark: "87 HD",
+  },
+  {
+    degree: "Computer Science",
     course: "Mathematics 1A (MATH1131)",
     mark: "95 HD",
   },

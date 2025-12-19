@@ -6,7 +6,7 @@ export const workExperience = [
     date: "Sep 2024 - Present",
     details: [
       "Computer Systems Fundamentals (COMP1521) Tutor & Lab Assistant",
-      "Web Front-End Programming (COMP6080) Tutor & Lab Assistant",
+      "Web Front-End Programming (COMP6080) Tutor",
       "Exam Invigilator",
     ],
     description:

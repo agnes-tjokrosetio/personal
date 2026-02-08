@@ -10,7 +10,7 @@ export const workExperience = [
       "Exam Invigilator",
     ],
     description:
-      "Tutoring and lab assisting multiple classes (of ~20 students) in the course Computer Systems Fundamentals (COMP1521). Facilitating labs, help sessions and online forums to support student learning and problem solving. Assessed student performance by marking assignments and exams and exam invigilating numerous course examinations.",
+      "Tutoring and lab assisting multiple classes (of ~20 students). Facilitating labs, help sessions and online forums to support student learning and problem solving. Assessed student performance by marking assignments and exams and exam invigilating numerous course examinations.",
   },
   {
     title: "Student Mentor",
@@ -126,7 +126,7 @@ export const volunteeringActivities = [
     title: "Vice President Technicals",
     society: "UNSW Forex Association",
     date: "Nov 2025 - Present",
-    description: "",
+    description: "Managed the IT portfolio activities.",
   },
   {
     title: "IT Director",

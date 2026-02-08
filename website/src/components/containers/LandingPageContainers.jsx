@@ -18,7 +18,7 @@ export const LandingIntro = () => {
         <p className="text-[2rem] font-extrabold text-[white]">Hi, I'm Agnes</p>
         <p className="text-[1.5rem] text-gray-300 font-medium">Commerce / Computer Science Student</p>
         <p className="text-[1rem] text-[#f0f0f0] max-w-[600px]">
-          I am a 3rd year UNSW student studying a <b>Bachelor of Computer Science / Commerce</b>, majoring in Computer
+          I am a 4th year UNSW student studying a <b>Bachelor of Computer Science / Commerce</b>, majoring in Computer
           Science and Finance.
         </p>
         <p className="text-[1rem] text-white">

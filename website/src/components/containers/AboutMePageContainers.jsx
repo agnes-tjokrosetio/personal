@@ -4,7 +4,7 @@ export const AboutMeIntro = () => (
   <div className="flex flex-col text-white gap-4 py-[6vh] px-[10vw] md:px-[5vw] text-center">
     <p className="text-[2rem] font-bold text-white">About Me</p>
     <p className="text-[1rem] text-white">
-      I'm Agnes and I am currently a 3rd year UNSW student studying a Bachelor of Computer Science / Commerce, majoring
+      I'm Agnes and I am currently a 4th year UNSW student studying a Bachelor of Computer Science / Commerce, majoring
       in Computer Science and Finance. I hope to utilise my hands-on experience in frontend and backend software
       engineering, to build efficient, scalable and customer first solutions. As such, I am seeking opportunities in a
       software engineering (technology) intern role (in frontend, backend or full stack).

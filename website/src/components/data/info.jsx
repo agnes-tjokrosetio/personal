@@ -13,6 +13,14 @@ export const workExperience = [
       "Tutoring and lab assisting multiple classes (of ~20 students). Facilitating labs, help sessions and online forums to support student learning and problem solving. Assessed student performance by marking assignments and exams and exam invigilating numerous course examinations.",
   },
   {
+    title: "Student Consultant",
+    company: "Woolworths International Group",
+    location: "Hong Kong, SAR",
+    date: "Jan 2025 - Feb 2025",
+    description:
+      "Analysed the end-to-end New Product Development workflow to identify key operational inefficiencies. Delivered two AI-driven solutions forecasted to improve monthly productivity by 3–10% through global sourcing process automation and enable data driven decision making. Developed an agentic AI solution to automate insights generation and improve pre-launch product evaluation. Developed an omnichannel communication platform to streamline stakeholder collaboration across teams. Collaborated in an international team to challenge existing frameworks and present actionable strategies.",
+  },
+  {
     title: "Student Mentor",
     company: "UNSW",
     location: "Sydney, NSW",

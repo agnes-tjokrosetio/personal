@@ -16,7 +16,7 @@ export const workExperience = [
     title: "Student Consultant",
     company: "Woolworths International Group",
     location: "Hong Kong, SAR",
-    date: "Jan 2025 - Feb 2025",
+    date: "Jan 2026 - Feb 2026",
     description:
       "Analysed the end-to-end New Product Development workflow to identify key operational inefficiencies. Delivered two AI-driven solutions forecasted to improve monthly productivity by 3–10% through global sourcing process automation and enable data driven decision making. Developed an agentic AI solution to automate insights generation and improve pre-launch product evaluation. Developed an omnichannel communication platform to streamline stakeholder collaboration across teams. Collaborated in an international team to challenge existing frameworks and present actionable strategies.",
   },

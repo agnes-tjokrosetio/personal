@@ -231,7 +231,7 @@ export const projects = [
       "UNSW Mending Broken Hearts is a student led engineering project developing a total artificial heart prototype in collaboration with UNSW academic researchers. As a Software Engineer in the Software Team, I contributed to the design and development of a patient mobile application to support heart monitoring and health management. I also contributed to designing the clinician website and desktop application for real time access to patient data. Our team also closely collaborate with the Control Systems team to integrate sensors into the application backend. We also worked on optimising maintainability by user version control via Git and component design.",
     code: "",
     demo: "",
-    ongoing: true,
+    ongoing: false,
   },
   {
     name: "presto",

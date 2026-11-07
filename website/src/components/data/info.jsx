@@ -157,14 +157,14 @@ export const volunteeringActivities = [
   {
     title: "IT Director",
     society: "UNSW Forex Association",
-    date: "Apr 2025 - Nov 2025",
+    date: "Apr 2025 - Oct 2025",
     description:
       "Designed, built and maintained the UNSW FXA website with a co-director, working on ensuring usability and reach. Developed and optimised internal tools to streamline workflows, collaboration and improve member engagement. Leading a team of subcommittee members alongside my co-director to facilitate growth and skill development and enhancing member engagement through portfolio events and activities.",
   },
   {
     title: "IT Director",
     society: "UNSW Financial Technology Society",
-    date: "Nov 2024 - Nov 2025",
+    date: "Nov 2024 - Oct 2025",
     description:
       "Maintaining operation functionality of the society through managing various IT platforms (including the society website, communication channels, emails and cloud drive). My co-directors and I were also responsible for leading and managing a team of subcommittee members to oversee the technical maintenance of the society and handle the marking for the annual Algothon competition. We also organised team building activities and events for the portfolio team.",
   },

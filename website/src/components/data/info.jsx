@@ -121,6 +121,11 @@ export const relevantCourses = [
   },
   {
     degree: "Computer Science",
+    course: "Human Computer Interaction (COMP3511)",
+    mark: "85 HD",
+  },
+  {
+    degree: "Computer Science",
     course: "Mathematics 1A (MATH1131)",
     mark: "95 HD",
   },

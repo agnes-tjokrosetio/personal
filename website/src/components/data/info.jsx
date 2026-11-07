@@ -160,20 +160,20 @@ export const volunteeringActivities = [
   {
     title: "Vice President Technicals",
     society: "UNSW Forex Association",
-    date: "Nov 2025 - Present",
+    date: "Nov 2025 - Oct 2026",
     description: "Managed the IT portfolio activities.",
   },
   {
     title: "IT Director",
     society: "UNSW Forex Association",
-    date: "Apr 2025 - Present",
+    date: "Apr 2025 - Nov 2025",
     description:
       "Designed, built and maintained the UNSW FXA website with a co-director, working on ensuring usability and reach. Developed and optimised internal tools to streamline workflows, collaboration and improve member engagement. Leading a team of subcommittee members alongside my co-director to facilitate growth and skill development and enhancing member engagement through portfolio events and activities.",
   },
   {
     title: "IT Director",
     society: "UNSW Financial Technology Society",
-    date: "Nov 2024 - Present",
+    date: "Nov 2024 - Nov 2025",
     description:
       "Maintaining operation functionality of the society through managing various IT platforms (including the society website, communication channels, emails and cloud drive). My co-directors and I were also responsible for leading and managing a team of subcommittee members to oversee the technical maintenance of the society and handle the marking for the annual Algothon competition. We also organised team building activities and events for the portfolio team.",
   },
@@ -207,7 +207,7 @@ export const interestAreas = [
   },
   {
     icon: "fa-hand-o-right",
-    label: "Tennis and gym",
+    label: "Sports (tennis, bouldering, gym)",
   },
   {
     icon: "fa-map-marker",
@@ -222,7 +222,7 @@ export const interestAreas = [
 export const projects = [
   {
     name: "UNSW Forex Association Website",
-    date: "May 2025 - Present",
+    date: "May 2025 - Oct 2025",
     stack: "React, JavaScript, HTML, Tailwind CSS",
     description:
       "Designing, developing and maintaining the society website for UNSW Forex Association. Collaborated closely with my co-director and the VP of internals to align the website feature with society goals and events. Implemented features including responsiveness, event listings and member resources to improve engagement. Optimising maintainability by user version control via Git and component design. The website was built as a React and Vite project. ",

@@ -10,14 +10,15 @@ export const workExperience = [
       "Web Front-End Programming (COMP6080) - Tutor [26T1]",
     ],
     description:
-      "As a course admin for COMP1521, I am involved in managing the system administration and maintenance of the course infrastructure and contributing to the development of exams under COMP1521. As a tutor and lab assistant, I am responsible for tutoring and lab assisting multiple classes (of ~20 students). I am also responsible for facilitating labs, help sessions and online forums to support student learning and problem solving. My role also involves assessing student performance by marking assignments and exams.",
+      "As a course admin for COMP1521, I am involved in managing the system administration and maintenance of the course infrastructure and contributing to the development of exams under COMP1521. As a tutor and lab assistant, I am responsible for tutoring theoretical and programming concepts to multiple classes (of ~20 students). I am also responsible for facilitating computer lab sessions, help sessions and online forums to support student learning. My role also involves assessing student performance by marking assignments and exams.",
   },
   {
     title: "Exam Invigilator",
     company: "UNSW",
     location: "Sydney, NSW",
     date: "Sep 2024 - Present",
-    description: "Invigilating numerous computer science course examinations.",
+    description:
+      "Set up and monitor exam sessions, including specific materials and lab equipment for each exam. Assist students with simple technical issues related to the CSE computing systems used during the exam. Report issues regarding any potential misconducts, WHS, or any other concerns.",
   },
   {
     title: "Student Consultant",

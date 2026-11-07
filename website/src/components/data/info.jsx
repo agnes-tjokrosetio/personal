@@ -5,12 +5,18 @@ export const workExperience = [
     location: "Sydney, NSW",
     date: "Sep 2024 - Present",
     details: [
-      "Computer Systems Fundamentals (COMP1521) Tutor & Lab Assistant",
-      "Web Front-End Programming (COMP6080) Tutor",
-      "Exam Invigilator",
+      "Computer Systems Fundamentals (COMP1521) Course Admin, Tutor & Lab Assistant [24T3 - Present]",
+      "Web Front-End Programming (COMP6080) Tutor - [26T1]",
     ],
     description:
-      "Tutoring and lab assisting multiple classes (of ~20 students). Facilitating labs, help sessions and online forums to support student learning and problem solving. Assessed student performance by marking assignments and exams and exam invigilating numerous course examinations.",
+      "As a course admin for COMP1521, I am involved in managing the system administration and maintenance of the course infrastructure and contributing to the development of exams under COMP1521. As a tutor and lab assistant, I am responsible for tutoring and lab assisting multiple classes (of ~20 students). I am also responsible for facilitating labs, help sessions and online forums to support student learning and problem solving. My role also involves assessing student performance by marking assignments and exams.",
+  },
+  {
+    title: "Exam Invigilator",
+    company: "UNSW",
+    location: "Sydney, NSW",
+    date: "Sep 2024 - Present",
+    description: "Invigilating numerous computer science course examinations.",
   },
   {
     title: "Student Consultant",
@@ -49,28 +55,39 @@ export const workExperience = [
 export const relevantSkills = [
   {
     type: "Programming Languages",
-    details: ["C", "MIPS Assembly", "Java", "SQL", "Python", "Rust", "JavaScript", "TypeScript", "HTML", "CSS"],
+    details: [
+      "C",
+      "MIPS Assembly",
+      "Java",
+      "SQL",
+      "Python",
+      "Rust",
+      "JavaScript",
+      "TypeScript",
+      "HTML",
+      "CSS",
+    ],
   },
   {
     type: "Databases",
-    details: ["MySql", "PostgreSQL", "SQLite", "psycopg2", "Firebase"],
+    details: ["PostgreSQL", "Firebase"],
   },
   {
     type: "Software Engineering",
-    details: ["Object Oriented Programming", "Testing"],
+    details: ["Software Testing"],
   },
   {
-    type: "Frameworks and Libraries",
-    details: ["React.JS", "React Native", "Expo", "Vite", "shadcn/ui", "Material-UI", "Tailwind CSS"],
+    type: "Frameworks",
+    details: ["React.JS", "React Native", "Expo", "Vite"],
   },
   {
     type: "Tools / Environments",
-    details: ["GitLab/GitHub", "Figma", "VSCode", "RStudio", "PyCharm", "Framer"],
+    details: ["GitLab/GitHub", "Jira"],
   },
   {
     type: "General",
     details: [
-      "Teamwork / Collaboration",
+      "Teamwork and Collaboration",
       "Project Management",
       "Time Management",
       "Communication",
@@ -82,6 +99,11 @@ export const relevantSkills = [
 ];
 
 export const relevantCourses = [
+  {
+    degree: "Computer Science",
+    course: "Computer Science Project (COMP3900)",
+    mark: "98 HD",
+  },
   {
     degree: "Computer Science",
     course: "Web Front-End Programming (COMP6080)",

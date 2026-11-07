@@ -18,7 +18,7 @@ export const workExperience = [
     location: "Sydney, NSW",
     date: "Sep 2024 - Present",
     description:
-      "Set up and monitor exam sessions, including overseeing specific materials and lab equipment for each exam. Assist students with simple technical issues related to the CSE computing systems used during the exam. Report issues regarding any potential misconducts, WHS, or any other concerns.",
+      "Setting up and monitoring exam sessions, including overseeing specific materials and lab equipment for each exam. Assisting students with simple technical issues related to the CSE computing systems used during the exam. Reporting issues regarding any potential misconducts, WHS, or any other concerns.",
   },
   {
     title: "Student Consultant",

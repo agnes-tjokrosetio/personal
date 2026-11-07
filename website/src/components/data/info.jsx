@@ -212,6 +212,26 @@ export const interestAreas = [
 
 export const projects = [
   {
+    name: "Jamlife",
+    date: "Jun 2026 – Aug 2026",
+    stack: "React Native, Expo, Firebase",
+    description:
+      "Engineered a mobile app using React Native, Expo and Firebase, to help women better understand their emotional and physiological state. Implemented LLM integration for user health data analysis, personalised recommendations, and conversational wellbeing companion. Implemented Apple HealthKit integration for dashboard display of biometrics including HRV and sleep",
+    code: "",
+    demo: "",
+    ongoing: false,
+  },
+  {
+    name: "UNSW Mending Broken Hearts",
+    date: "Jan 2025 - Dec 2025",
+    stack: "React.JS, React Native, Expo, TypeScript, JavaScript, Firebase",
+    description:
+      "UNSW Mending Broken Hearts is a student led engineering project developing a total artificial heart prototype in collaboration with UNSW academic researchers. As a Software Engineer in the Software Team, I contributed to the design and development of a patient mobile application to support heart monitoring and health management. I also contributed to designing the clinician website and desktop application for real time access to patient data. Our team also closely collaborate with the Control Systems team to integrate sensors into the application backend. We also worked on optimising maintainability by user version control via Git and component design.",
+    code: "",
+    demo: "",
+    ongoing: false,
+  },
+  {
     name: "UNSW Forex Association Website",
     date: "May 2025 - Oct 2025",
     stack: "React, JavaScript, HTML, Tailwind CSS",
@@ -219,16 +239,6 @@ export const projects = [
       "Designing, developing and maintaining the society website for UNSW Forex Association. Collaborated closely with my co-director and the VP of internals to align the website feature with society goals and events. Implemented features including responsiveness, event listings and member resources to improve engagement. Optimising maintainability by user version control via Git and component design. The website was built as a React and Vite project. ",
     code: "",
     demo: "https://unswfxa.au/",
-    ongoing: false,
-  },
-  {
-    name: "UNSW Mending Broken Hearts",
-    date: "Jan 2025 - Dec 2025",
-    stack: "React.JS, React Native, TypeScript, JavaScript, Firebase",
-    description:
-      "UNSW Mending Broken Hearts is a student led engineering project developing a total artificial heart prototype in collaboration with UNSW academic researchers. As a Software Engineer in the Software Team, I contributed to the design and development of a patient mobile application to support heart monitoring and health management. I also contributed to designing the clinician website and desktop application for real time access to patient data. Our team also closely collaborate with the Control Systems team to integrate sensors into the application backend. We also worked on optimising maintainability by user version control via Git and component design.",
-    code: "",
-    demo: "",
     ongoing: false,
   },
   {

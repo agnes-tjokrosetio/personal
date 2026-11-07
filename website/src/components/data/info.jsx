@@ -5,8 +5,9 @@ export const workExperience = [
     location: "Sydney, NSW",
     date: "Sep 2024 - Present",
     details: [
-      "Computer Systems Fundamentals (COMP1521) Course Admin, Tutor & Lab Assistant [24T3 - Present]",
-      "Web Front-End Programming (COMP6080) Tutor - [26T1]",
+      "Computer Systems Fundamentals (COMP1521) - Course Admin [26T3 - Present]",
+      "Computer Systems Fundamentals (COMP1521) - Tutor & Lab Assistant [24T3 - Present]",
+      "Web Front-End Programming (COMP6080) - Tutor [26T1]",
     ],
     description:
       "As a course admin for COMP1521, I am involved in managing the system administration and maintenance of the course infrastructure and contributing to the development of exams under COMP1521. As a tutor and lab assistant, I am responsible for tutoring and lab assisting multiple classes (of ~20 students). I am also responsible for facilitating labs, help sessions and online forums to support student learning and problem solving. My role also involves assessing student performance by marking assignments and exams.",

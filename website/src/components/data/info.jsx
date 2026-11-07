@@ -30,7 +30,7 @@ export const workExperience = [
     title: "Student Mentor",
     company: "UNSW",
     location: "Sydney, NSW",
-    date: "May 2024 - Present",
+    date: "May 2024 - Jul 2025",
     description:
       "As part of the Engineering Social Study Hub, provided peer tutoring and support to first year students in first year mathematics courses (Mathematics 1A, Mathematics 1B, and Discrete Mathematics). Contributed to the study hub environment by fostering collaboration, guidance and peer-to-peer learning to help students transition to university level course work.",
   },
@@ -42,14 +42,6 @@ export const workExperience = [
     description:
       "Tutoring senior high school students in Mathematics curriculum (Mathematics Advanced, Extension 1 and Extension 2). Teaching with clarity and patience, guiding students through weekly homework, quizzes and school questions. Assessed student progress by marking weekly quizzes and homework across Year 9 to 12 students.",
   },
-  {
-    title: "Tutor",
-    company: "Abacus Coaching Centre",
-    location: "Sydney, NSW",
-    date: "Jan 2020 - Jan 2022",
-    description:
-      "Supervised a number of small grouped primary school students (Kindergarten to Year 6) and teaching Mathematics (simple mental arithmetic and more advanced worded problems) and English (reading, writing, grammar, and vocabulary).",
-  },
 ];
 
 export const relevantSkills = [
@@ -58,7 +50,6 @@ export const relevantSkills = [
     details: [
       "C",
       "MIPS Assembly",
-      "Java",
       "SQL",
       "Python",
       "Rust",
@@ -228,7 +219,7 @@ export const projects = [
       "Designing, developing and maintaining the society website for UNSW Forex Association. Collaborated closely with my co-director and the VP of internals to align the website feature with society goals and events. Implemented features including responsiveness, event listings and member resources to improve engagement. Optimising maintainability by user version control via Git and component design. The website was built as a React and Vite project. ",
     code: "https://github.com/forexit2025/forexit2025.github.io",
     demo: "https://unswfxa.au/",
-    ongoing: true,
+    ongoing: false,
   },
   {
     name: "DevSov HACKaByte Hackathon",

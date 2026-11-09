@@ -5,7 +5,9 @@ import { ProjectsIntro, ProjectsSection } from "../components/containers/Project
 import PageScreen from "../components/layout/PageScreen";
 
 function ProjectsPage() {
-  React.useEffect(() => window.scrollTo(0, 0), []);
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>

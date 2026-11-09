@@ -5,7 +5,9 @@ import { AboutMeIntro, AboutMeSections } from "../components/containers/AboutMeP
 import PageScreen from "../components/layout/PageScreen";
 
 function AboutMePage() {
-  React.useEffect(() => window.scrollTo(0, 0), []);
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const [experience, setExperience] = React.useState(false);
   const [skills, setSkills] = React.useState(false);

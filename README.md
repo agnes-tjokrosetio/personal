@@ -8,4 +8,4 @@ Website: https://agnes-tjokrosetio.github.io/personal/#/
 
 ## More Details
 
-This project is a React app with Tailwind CSS and Vite. It utilises JavaScript, CSS and HTML.
+This project is a React app built with Vite. It utilises JavaScript, CSS and HTML.
